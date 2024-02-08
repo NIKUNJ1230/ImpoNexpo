@@ -1,0 +1,263 @@
+:root {
+    --theme: #1D5DC7;
+    --theme-border: #00BAF2;
+    --text-secondary: #7C7C7C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+
+.container {
+    /* max-width: 1320px; */
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.w-1 {
+    width: 100%;
+}
+
+.w-2 {
+    width: 50%;
+}
+
+.w-3 {
+    width: 33.33%;
+}
+
+.w-4 {
+    width: 25%;
+}
+
+.w-5 {
+    width: 20%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+/* offer  */
+
+.offer-img {
+    width: 100%;
+    height: 100%;
+}
+
+.offer-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.slick-prev {
+    left: -40px !important;
+    z-index: 1;
+}
+
+.slick-next {
+    right: -40px !important;
+}
+
+.slick-prev,
+.slick-next {
+    background-color: #A9C4FB !important;
+    border-radius: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    border: 8px solid white !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+    /* -webkit-text-stroke: black !important; */
+}
+
+.slick-dots {
+    bottom: -10% !important;
+    text-align: left !important;
+}
+
+.slick-dots li button::before {
+    color: transparent !important;
+    border-radius: 50%;
+    opacity: 1 !important;
+    background-color: #D9D9D9 !important;
+}
+
+.slick-dots .slick-active button::before {
+    width: 10px !important;
+    height: 10px !important;
+    border: 5px solid #707070;
+    background-color: red !important;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.category {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.categoty-title {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.categoty-title-img {
+    width: 25px;
+    height: 25px;
+}
+
+.categoty-title-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.categoty-title h3 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #3972D0;
+    margin-left: 15px;
+}
+
+.categoty-list ul li {
+    padding: 10px 15px;
+    background-color: #00BAF2;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.categoty-list ul li a {
+    text-transform: capitalize;
+    color: #424242;
+}
+
+.categoty-list ul li i {
+    color: #424242;
+}
+
+.offer-right {
+    padding-left: 20px;
+    margin-left: 90px;
+}
+
+.offer-right-title h2 {
+    font-size: 25px;
+}
+
+.offer-right-title h2 span {
+    font-size: 35px;
+    color: red;
+}
+
+.offer-right ul {
+    margin: 20px 0;
+    color: #4E4E4E;
+    padding-left: 20px;
+}
+
+.offer-right ul li {
+    list-style: disc;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.offer-right .quatation-form input,
+.offer-right .quatation-form textarea {
+    width: 100%;
+    padding: 13px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    margin: 7px 0;
+}
+
+.offer-right .quatation-form input:focus,
+.offer-right .quatation-form textarea:focus {
+    border: 1px solid #00BAF2;
+}
+
+.offer-right .quatation-form textarea:focus {
+    outline: 1px solid #00BAF2;
+}
+
+.offer-right .quatation-form input::placeholder,
+.offer-right .quatation-form textarea::placeholder {
+    color: #00BAF2;
+}
+
+.half-input {
+    width: 48% !important;
+}
+
+.half-input::placeholder {
+    font-size: 12px !important;
+}
+
+.offer-right .quatation-form button {
+    background-color: #1D5DC7;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}

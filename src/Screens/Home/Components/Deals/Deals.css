@@ -1,0 +1,30 @@
+.deals-title h2 {
+  color: red;
+  font-size: 36px;
+  padding: 0 5%;
+}
+
+.deals-title {
+  margin-bottom: 20px;
+}
+.deals-category {
+  margin-left: 25%;
+}
+.deals-category h2 {
+  margin-bottom: 30px;
+}
+.deals-category ul li {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  transition: all 0.3s linear;
+  border: 2px solid transparent;
+}
+.deals-category ul li:hover{
+  
+  border: 2px solid red;
+}
+.deals-category ul li:hover a{
+  color: red;
+}
