@@ -185,8 +185,9 @@
   padding: 5px 0;
 }
 .card1__components_fbtn {
-  background: linear-gradient(80deg, #1d5ec9 0%, #265c81 100%);
-  color: white;
+  /* background: linear-gradient(80deg, #1d5ec9 0%, #265c81 100%); */
+  color: #1D5DC7;
+  border: 2px solid #1D5DC7;
   font-size: 10px;
   padding: 5px 7px;
   border-radius: 8px;

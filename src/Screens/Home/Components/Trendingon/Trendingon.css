@@ -11,7 +11,11 @@
     width: 58%;
 
 }
-
+.trendingon-crown{
+    position: absolute;
+    top: -30%;
+    left: 10%;
+}
 .trendingon-heading-main {
     width: 100%;
     text-align: center;

@@ -1,0 +1,97 @@
+.warehouse-title h2 {
+    font-size: 48px;
+    margin-top: 50px;
+    padding: 0 15%;
+    text-align: center;
+}
+
+.warehouse-title h2 span {
+    color: #1D5DC7;
+}
+
+.warehouse-menu {
+    padding: 0 5%;
+}
+
+.warehouse-menu ul {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px 0;
+}
+
+.warehouse-menu ul li {
+    padding: 15px 0;
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+
+.warehouse-menu ul li:last-child:hover {
+    background-color: white;
+}
+
+.warehouse-menu ul li:last-child a,
+.warehouse-menu ul li:last-child:hover a {
+    display: flex;
+    align-items: center;
+    color: #1D5DC7;
+    font-weight: 500;
+
+}
+
+.warehouse-menu ul li a {
+    color: black;
+}
+
+.warehouse-menu ul li:hover {
+    background-color: #336CCC;
+}
+
+.warehouse-menu ul li:hover a {
+    color: white;
+}
+
+.warehouse-content{
+    position: relative;
+}
+.warehouse-star{
+    position: absolute;
+    right: 10%;
+}
+
+.home__warehouseprods_sourcemorebtn {
+    width: 270px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 2px rgb(228, 228, 228);
+    position: relative;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .home__warehouseprods_sourcemorebtntxt {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    padding: 0 15px;
+    color: rgba(29, 93, 199, 1);
+  }
+  
+  .home__warehouseprods_sourcemorebtniconwrap {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(29, 93, 199, 1);
+  }

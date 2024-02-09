@@ -16,20 +16,99 @@ p.centrixtool-head-p {
 }
 
 .importer-box-1 {
-    width: 33.3%;
+    width: 25%;
     background-color: #00BAF2;
     border-radius: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 .importer-boxesmain {
     max-width: 100%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 0 100px;
+    justify-content: center;
+
 }
+
 .iporter-boxes-maindiv {
-    width: 30%;
-    border: 1px solid black;
+    width: 25%;
+    border: 1px solid #979797;
     border-radius: 10px;
     padding: 20px 30px;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.importer-box-1-img-div {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 227px;
+}
+
+.importer-box-1-img-div {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 227px;
+    text-align: center;
+    margin: 30px 50px;
+}
+
+.importer-box-1-p-div {
+    text-align: center;
+    width: 100%;
+}
+
+p.importer-box-1-p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+button.importer-box-1-btn {
+    border: none;
+    width: 100%;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 500;
+}
+
+.importer-box-1-btn-div {
+    margin: 20px 40px;
+}
+
+.importerbox-img-div {
+    background-color: #00baf2;
+    border-radius: 100%;
+    width: 203px;
+    margin: 20px 0;
+    padding: 25px;
+}
+
+p.importerbox-p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #7C7676;
+    text-align: center;
+
+}
+
+button.importerbox-btn {
+    background-color: #00baf2;
+    border: none;
+    padding: 20px 35px;
+    color: white;
+    border-radius: 10px;
+}
+
+.importerbox-btn-div {
+    margin: 30px 0 20px 0;
 }

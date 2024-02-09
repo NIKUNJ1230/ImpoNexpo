@@ -41,6 +41,7 @@ p.expo-p2 {
 }
 
 .export-heading-main {
+    margin-top: 50px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -55,7 +56,7 @@ p.expo-p2 {
 
 .crown-black-exporter{
     position: absolute;
-    left: 8%;
+    left: 0%;
     top: -20px;
 }
 

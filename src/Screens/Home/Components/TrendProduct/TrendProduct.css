@@ -1,0 +1,107 @@
+.TrendPro {
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.TrendPro-title h2 {
+  text-align: center;
+  font-size: 48px;
+  padding: 0 2%;
+}
+
+.TrendPro-title h2 span {
+  color: #1D5DC7;
+}
+
+.TrendPro-title {
+  margin-bottom: 20px;
+}
+
+.live-stream {
+  width: 100%;
+  height: 850px;
+  max-height: 850px;
+}
+
+.live-stream img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.live-text h4 {
+  font-size: 25px;
+  text-align: end;
+}
+
+.live-text h4 span {
+  color: red;
+}
+
+
+.home__TrendProprods_sourcemorebtn {
+  width: 270px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 2px rgb(228, 228, 228);
+  position: relative;
+  margin-top: 30px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.home__TrendProprods_sourcemorebtntxt {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  padding: 0 15px;
+  color: rgba(29, 93, 199, 1);
+}
+
+.home__TrendProprods_sourcemorebtniconwrap {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(29, 93, 199, 1);
+}
+
+.home__TrendProgprods_hstar {
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+}
+
+.TrendProList {
+  margin: 30px 0 20px 30px;
+}
+
+.TrendProList ul li a,
+.TrendProList ul li a span,
+.TrendProList ul {
+  display: flex;
+  align-items: center;
+}
+
+.TrendProList ul li a span {
+  margin-left: 15px;
+}
+
+.TrendProList ul li a {
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: white;
+  margin: 0 10px;
+  color: #1D5DC7;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

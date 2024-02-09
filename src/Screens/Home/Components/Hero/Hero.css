@@ -8,9 +8,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
     /* background-color: black; */
 }
-
+body{
+    overflow-x: hidden;
+}
 .container {
     /* max-width: 1320px; */
     padding: 0 5%;
@@ -95,17 +98,17 @@ ul li {
     height: 100%;
 }
 
-.slick-prev {
+.offer .slick-prev {
     left: -40px !important;
     z-index: 1;
 }
 
-.slick-next {
+.offer .slick-next {
     right: -40px !important;
 }
 
-.slick-prev,
-.slick-next {
+.offer .slick-prev,
+.offer .slick-next {
     background-color: #A9C4FB !important;
     border-radius: 50%;
     width: 60px !important;
@@ -113,25 +116,25 @@ ul li {
     border: 8px solid white !important;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.offer .slick-prev:before,
+.offer .slick-next:before {
     color: black !important;
     /* -webkit-text-stroke: black !important; */
 }
 
-.slick-dots {
+.offer .slick-dots {
     bottom: -10% !important;
     text-align: left !important;
 }
 
-.slick-dots li button::before {
+.offer .slick-dots li button::before {
     color: transparent !important;
     border-radius: 50%;
     opacity: 1 !important;
     background-color: #D9D9D9 !important;
 }
 
-.slick-dots .slick-active button::before {
+.offer .slick-dots .slick-active button::before {
     width: 10px !important;
     height: 10px !important;
     border: 5px solid #707070;

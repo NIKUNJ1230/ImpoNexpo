@@ -1,0 +1,74 @@
+.aboutus-heading-div {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+}
+
+.aboutus-head-span {
+    color: #1D5DC7;
+}
+
+.aboutus-main {
+    width: 25%;
+    height: 265px;
+    border: 1px solid #00baf2;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.aboutus-slider-main {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-usericon-main {
+    background-color: #336CCC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutus-usericon1-img-main {
+    height: 58px;
+}
+
+p.aboutus-p2-p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #00BAF2;
+}
+
+.aboutus-p2-div-p1 {
+    margin: 20px 0;
+}
+
+p.aboutus-p2-p2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #807D7E;
+}
+.slick-slider.slick-initialized {
+    width: 100%;
+}
+.slick-prev {
+    left: 83% !important;
+    z-index: 1;
+    top: 105.5%;
+}
+.slick-next {
+    right: 11%!important;
+    top: 105%;
+    z-index: 1;
+}
+.slick-dots {
+    bottom: -10% !important;
+    text-align: left !important;
+    overflow: hidden;
+    padding-left: 225px;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "./Trending.css";
 import Crown from "../../../../assets/images/headingcrown.png";
-import Star from "../../../../assets/images/redstar.png";
+import Star from "../../../../assets/images/star_red.svg";
 import Card1 from "../../../../Components/Cards/Card1/Card1";
 // Import slick carousel styles
 import "slick-carousel/slick/slick.css";
