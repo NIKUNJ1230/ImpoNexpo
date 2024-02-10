@@ -13,7 +13,7 @@ import PublicRoute from "./routes/PublicRoutes";
 import ProtectedRoute from "./routes/ProtectedRoutes";
 import NewPassword from "./Screens/Auth/NewPassword";
 import Register from "./Screens/Auth/Register";
-
+import Chats from "./Components/Chats/Chats";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -71,6 +71,7 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route exact path="/Chat" element={<Chats/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -35,7 +35,8 @@ const Navbar = () => {
         </div>
         <div className="navbar__auth_actright">
           <Link to="/register">Sign Up/</Link>
-          <Link to="login">Sign In</Link>
+          <Link to="/login">Sign In</Link>
+          <Link to="/Chat">Chat</Link>
         </div>
       </div>
     </div>
