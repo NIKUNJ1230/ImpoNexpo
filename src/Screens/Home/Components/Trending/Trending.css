@@ -42,25 +42,26 @@
   top: -60px;
 }
 
-.home__trendingprods_cards .slick-prev {
+.home__trendingprods_section .slick-prev {
   left: 3% !important;
   border: none !important;
   background-color: #595959 !important;
+  z-index: 1;
 }
 
-.home__trendingprods_cards .slick-next {
+.home__trendingprods_section .slick-next {
   border: none !important;
   background-color: #595959 !important;
   right: 7% !important;
 }
 
-.home__trendingprods_cards .slick-prev:hover,
-.home__trendingprods_cards .slick-next:hover {
+.home__trendingprods_section .slick-prev:hover,
+.home__trendingprods_section .slick-next:hover {
   background-color: #595959 !important;
 }
 
-.home__trendingprods_cards .slick-prev::before,
-.home__trendingprods_cards .slick-next::before {
+.home__trendingprods_section .slick-prev::before,
+.home__trendingprods_section .slick-next::before {
   color: white !important;
   font-size: 30px !important;
 }

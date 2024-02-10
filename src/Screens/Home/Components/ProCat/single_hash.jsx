@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function single_hash({hash}) {
+function single_hash({ hash }) {
   return (
     <li>
-      <a href="#">{hash}</a>
+      <Link to="/">{hash}</Link>
     </li>
   );
 }

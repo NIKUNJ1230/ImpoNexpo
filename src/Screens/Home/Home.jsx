@@ -13,6 +13,8 @@ import TrendProduct from "./Components/TrendProduct/TrendProduct";
 import Personalized from "./Components/Personalized/Personalized";
 import Warehouse from "./Components/Warehouse/Warehouse";
 import ProCat from "./Components/ProCat/ProCat";
+import Region from "./Components/Region/Region";
+import Footer from "./Components/Footer/Footer";
 const Home = () => {
   return (
     <div className="home__screen">
@@ -23,12 +25,14 @@ const Home = () => {
       <Deals />
       <Expoters />
       <Trendingon />
-      <CentrixTools />
-      <AboutUs />
       <TrendProduct />
       <Personalized />
       <ProCat />
+      <CentrixTools />
+      <AboutUs />
+      <Region />
       <Warehouse />
+      <Footer />
     </div>
   );
 };

@@ -49,12 +49,6 @@ function Hero() {
                 </div>
                 <div className="categoty-list">
                   <ul>
-                    {/* <li>
-                      <a href="#">mens clothes</a>
-                      <i>
-                        <FontAwesomeIcon icon={faAngleRight} />
-                      </i>
-                    </li> */}
                     <Single_offerCat cat_name={"mens clothes"} />
                     <Single_offerCat cat_name={"womens clothes"} />
                     <Single_offerCat cat_name={"jewellery"} />

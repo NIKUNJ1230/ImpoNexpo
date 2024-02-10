@@ -75,7 +75,7 @@ const Trending = () => {
       <div className="home__trendingprods_heading">
         <img src={Crown} alt="" className="home__trendingprods_hcrown" />
         <img src={Star} alt="" className="home__trendingprods_hstar" />
-        Trending Products{" "}
+        Trending Products
         <span className="home__trendingprods_hdinghighlight">
           on ImpoNexpo Channel
         </span>

@@ -6,7 +6,7 @@
     text-align: center;
     position: relative;
     width: 100%;
-
+    margin-top: 60px;
 }
 
 .aboutus-head-span {
@@ -53,22 +53,58 @@ p.aboutus-p2-p2 {
     font-weight: 400;
     color: #807D7E;
 }
-.slick-slider.slick-initialized {
+
+.about-us .slick-slider.slick-initialized {
     width: 100%;
 }
-.slick-prev {
-    left: 83% !important;
+
+.about-us .slick-prev {
+    left: 86% !important;
     z-index: 1;
-    top: 105.5%;
+    top: 105%;
 }
-.slick-next {
-    right: 11%!important;
+
+.about-us .slick-next {
+    right: 11% !important;
     top: 105%;
     z-index: 1;
 }
-.slick-dots {
+
+.about-us.slick-dots {
     bottom: -10% !important;
     text-align: left !important;
     overflow: hidden;
     padding-left: 225px;
+}
+
+.about-us .slick-prev::before,
+.about-us .slick-next::before {
+    color: #595959 !important;
+}
+
+.about-us .slick-prev:hover::before,
+.about-us .slick-next:hover::before {
+    color: #D62720 !important;
+}
+.about-us .slick-dots{
+    width: 30% !important;
+}
+
+.about-us .slick-dots li button:before{
+    width:30px !important;
+    height:30px !important;
+    color: #595959 !important;
+    /* color: blue !important; */
+    font-size: 16px !important;
+}
+.about-us .slick-dots .slick-active button::before{
+    color: red !important;
+}
+.about-us{
+    position: relative;
+}
+.about_star{
+    position: absolute;
+    left: 30%;
+    top: 100%;
 }

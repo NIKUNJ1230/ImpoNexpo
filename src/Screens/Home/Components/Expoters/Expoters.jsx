@@ -2,6 +2,7 @@ import React from 'react'
 import "./Expoters.css"
 import crown from "../../../../assets/images/crownblack.svg";
 import expoterlogo from "../../../../assets/images/Expoterlogo.svg"
+import Single_exporter from './Single_exporter';
 
 function Expoters() {
     return (
@@ -16,96 +17,13 @@ function Expoters() {
                 </div>
             </div>
             <div className='main-expoters'>
-                <div className='expoters-wrape-div'>
-                    <div className='exporters-img-div'>
-                        <img src={expoterlogo} className='expo-img' alt="" />
-                    </div>
-                    <div className='expo-p1-div'>
-                        <p className='expo-p1'>
-                            TCL Incorporated
-                        </p>
-                    </div>
-                    <div className='expo-p2-div'>
-                        <p className='expo-p2'>
-                            @tlcincorporated
-                        </p>
-                    </div>
-                </div>
-                <div className='expoters-wrape-div'>
-                    <div className='exporters-img-div'>
-                        <img src={expoterlogo} className='expo-img' alt="" />
-                    </div>
-                    <div className='expo-p1-div'>
-                        <p className='expo-p1'>
-                            TCL Incorporated
-                        </p>
-                    </div>
-                    <div className='expo-p2-div'>
-                        <p className='expo-p2'>
-                            @tlcincorporated
-                        </p>
-                    </div>
-                </div>
-                <div className='expoters-wrape-div'>
-                    <div className='exporters-img-div'>
-                        <img src={expoterlogo} className='expo-img' alt="" />
-                    </div>
-                    <div className='expo-p1-div'>
-                        <p className='expo-p1'>
-                            TCL Incorporated
-                        </p>
-                    </div>
-                    <div className='expo-p2-div'>
-                        <p className='expo-p2'>
-                            @tlcincorporated
-                        </p>
-                    </div>
-                </div>
-                <div className='expoters-wrape-div'>
-                    <div className='exporters-img-div'>
-                        <img src={expoterlogo} className='expo-img' alt="" />
-                    </div>
-                    <div className='expo-p1-div'>
-                        <p className='expo-p1'>
-                            TCL Incorporated
-                        </p>
-                    </div>
-                    <div className='expo-p2-div'>
-                        <p className='expo-p2'>
-                            @tlcincorporated
-                        </p>
-                    </div>
-                </div>
-                <div className='expoters-wrape-div'>
-                    <div className='exporters-img-div'>
-                        <img src={expoterlogo} className='expo-img' alt="" />
-                    </div>
-                    <div className='expo-p1-div'>
-                        <p className='expo-p1'>
-                            TCL Incorporated
-                        </p>
-                    </div>
-                    <div className='expo-p2-div'>
-                        <p className='expo-p2'>
-                            @tlcincorporated
-                        </p>
-                    </div>
-                </div>
-                <div className='expoters-wrape-div'>
-                    <div className='exporters-img-div'>
-                        <img src={expoterlogo} className='expo-img' alt="" />
-                    </div>
-                    <div className='expo-p1-div'>
-                        <p className='expo-p1'>
-                            TCL Incorporated
-                        </p>
-                    </div>
-                    <div className='expo-p2-div'>
-                        <p className='expo-p2'>
-                            @tlcincorporated
-                        </p>
-                    </div>
-                </div>
+
+            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
+            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
+            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
+            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
+            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
+            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
             </div>
             <div className='expoters-button'>
                 <button className='expo-seeall-btn'>See All</button>

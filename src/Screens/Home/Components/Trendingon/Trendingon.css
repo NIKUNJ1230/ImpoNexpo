@@ -1,6 +1,7 @@
 .trendingon {
     color: #1D5DC7;
 }
+
 .trendingon-heading-div {
     font-size: 48px;
     font-weight: 700;
@@ -11,11 +12,45 @@
     width: 58%;
 
 }
-.trendingon-crown{
+.trendingon-main-div{
+    position: relative;
+}
+.trendingon-main-div::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -7%;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 75px solid #E9B9D9;
+    z-index: -1;
+}
+.trendingon-main-div::after{
+    content: "";
+    position: absolute;
+    width: 700px;
+    top: -50%;
+    right: -10%;
+    height: 700px;
+    border-radius: 50%;
+    background-color: #BFEEFC;
+    filter: blur(10px);
+    opacity: 0.7;
+    z-index: -1;
+}
+.trendingon-start{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.trendingon-crown {
     position: absolute;
     top: -30%;
-    left: 10%;
+    left: 17%;
 }
+
 .trendingon-heading-main {
     width: 100%;
     text-align: center;
@@ -23,9 +58,11 @@
     align-items: center;
     justify-content: center;
 }
-.trendingon-main-div{
-    margin: 50px 0 0 0 ;
+
+.trendingon-main-div {
+    margin: 50px 0 0 0;
 }
+
 .trendingon-tags-main {
     display: flex;
     justify-content: center;
@@ -33,6 +70,7 @@
     margin: 50px;
     flex-wrap: wrap;
 }
+
 .trendingon-tag {
     background-color: #1d5dc7;
     padding: 10px 40px;
@@ -40,6 +78,7 @@
     margin: 10px;
     color: #fff;
 }
+
 ul.trendingon-tags-ui {
     align-items: center;
     justify-content: center;
@@ -47,6 +86,7 @@ ul.trendingon-tags-ui {
     list-style-type: none;
     flex-wrap: wrap;
 }
+
 button.trendingon-btn {
     border: 1px solid #00BAF2;
     background-color: #fff;
@@ -54,6 +94,7 @@ button.trendingon-btn {
     font-weight: 500;
     padding: 15px 80px;
 }
+
 .trendingon-btn-div {
     text-align: center;
 }

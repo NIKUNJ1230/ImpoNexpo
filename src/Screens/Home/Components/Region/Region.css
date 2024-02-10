@@ -1,0 +1,80 @@
+.region-title {
+    text-align: center;
+}
+
+.region-title h2 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.region-title h2 span {
+    color: #0072CA;
+}
+
+.region-title input {
+    width: 25%;
+    padding: 15px 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid #00BAF2;
+}
+
+.region-title input::placeholder {
+    color: black;
+}
+
+.region-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.region-menu ul li a {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    color: #1D5DC7;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 20px 20px 20px 0;
+}
+
+.region-menu ul li a svg {
+    margin-left: 10px;
+}
+
+.region-flag ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.region-flag ul li {
+    margin: 20px 15px;
+}
+
+.region {
+    position: relative;
+}
+
+.region_star {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.region::before {
+    content: '';
+    position: absolute;
+    top : 60%;
+    left: -6%;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 75px solid #E9B9D9;
+    z-index: -1;
+}

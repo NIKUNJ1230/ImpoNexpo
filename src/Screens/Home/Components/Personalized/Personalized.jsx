@@ -1,7 +1,8 @@
 import React from "react";
 import "./Personalized.css";
 import Card from "../../../../Components/Cards/Card/Card";
-import star_red from "../../.././../assets/images/star_red.svg"
+import star_red from "../../.././../assets/images/star_red.svg";
+import { Link } from "react-router-dom";
 function Personalized() {
   return (
     <section>
@@ -24,11 +25,9 @@ function Personalized() {
               <Card />
             </div>
           </div>
-          <img src={star_red} alt="" className="Personalized-card-star"/>
+          <img src={star_red} alt="" className="Personalized-card-star" />
           <div className="Personalized-btn">
-            <a href="#">
-                See All
-            </a>
+            <Link to="/">See All</Link>
           </div>
         </div>
       </div>

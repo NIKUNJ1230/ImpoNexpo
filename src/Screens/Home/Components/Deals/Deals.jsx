@@ -5,6 +5,7 @@ import Crown from "../../../../assets/images/headingcrown.png";
 import Card from "../../../../Components/Cards/Card/Card";
 import Star from "../../../../assets/images/redstar.png";
 import DownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
+import Deals_category from "./Deals_category";
 const Deals = () => {
   return (
     <section>
@@ -21,33 +22,16 @@ const Deals = () => {
                   <h2>Most Popular Deals Categories</h2>
                   <div className="deals-ul">
                     <ul>
-                      <li>
-                        <a href="#">Project Management</a>
-                      </li>
-                      <li>
-                        <a href="#">Video Conferencing</a>
-                      </li>
-                      <li>
-                        <a href="#">E-Commerce Platforms</a>
-                      </li>
-                      <li>
-                        <a href="#">Marketing Automation</a>
-                      </li>
-                      <li>
-                        <a href="#">Accounting</a>
-                      </li>
-                      <li>
-                        <a href="#">CRM</a>
-                      </li>
-                      <li>
-                        <a href="#">Expense Management</a>
-                      </li>
-                      <li>
-                        <a href="#">ERP Systems</a>
-                      </li>
-                      <li>
-                        <a href="#">Online Backup</a>
-                      </li>
+                      <Deals_category cat={"Project Management"} />
+                      <Deals_category cat={"Video Conferencing"} />
+                      <Deals_category cat={"E-Commerce Platforms"} />
+                      <Deals_category cat={"Marketing Automationt"} />
+                      <Deals_category cat={"Marketing Automation"} />
+                      <Deals_category cat={"Accounting"} />
+                      <Deals_category cat={"CRM"} />
+                      <Deals_category cat={"Expense Management"} />
+                      <Deals_category cat={"ERP Systems"} />
+                      <Deals_category cat={"Online Backup"} />
                     </ul>
                   </div>
                 </div>

@@ -6,6 +6,7 @@ import Star from "../../../../assets/images/redstar.png";
 import DownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import live_stream from "../../../../assets/images/live video.svg";
 import Card_live from "../../../../Components/Cards/Card_live/Card_live";
+import Trendingpro_list from "./Trendingpro_list";
 const TrendProduct = () => {
   return (
     <section>
@@ -33,30 +34,9 @@ const TrendProduct = () => {
             <div className="w-60">
               <div className="TrendProList">
                 <ul>
-                  <li>
-                    <a href="#">
-                      Trending
-                      <span>
-                        <DownIcon className="home__TrendProprods_sourcemorebtnicon" />
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Upcoming
-                      <span>
-                        <DownIcon className="home__TrendProprods_sourcemorebtnicon" />
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Recent
-                      <span>
-                        <DownIcon className="home__TrendProprods_sourcemorebtnicon" />
-                      </span>
-                    </a>
-                  </li>
+                <Trendingpro_list text={"Trending"}/>
+                <Trendingpro_list text={"Upcoming"}/>
+                <Trendingpro_list text={"Recent"}/>
                 </ul>
               </div>
               <div className="row" style={{ marginLeft: "30px" }}>

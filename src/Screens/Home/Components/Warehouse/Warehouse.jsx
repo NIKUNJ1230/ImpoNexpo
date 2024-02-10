@@ -3,6 +3,8 @@ import "./Warehouse.css";
 import DownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Card from "../../../../Components/Cards/Card_ware/Card_ware";
 import star_blue from "../../../../assets/images/start_blue.svg";
+import Warehouse_menu from "./Warehouse_menu";
+import { Link } from "react-router-dom";
 function Warehouse() {
   return (
     <sction>
@@ -15,45 +17,25 @@ function Warehouse() {
         </div>
         <div className="warehouse-menu">
           <ul>
-            <li>
-              <a href="#">all</a>
-            </li>
-            <li>
-              <a href="#">sports</a>
-            </li>
-            <li>
-              <a href="#">men</a>
-            </li>
-            <li>
-              <a href="#">woman</a>
-            </li>
-            <li>
-              <a href="#">kids</a>
-            </li>
-            <li>
-              <a href="#">jawelary</a>
-            </li>
-            <li>
-              <a href="#">accessiores</a>
-            </li>
-            <li>
-              <a href="#">makeup</a>
-            </li>
-            <li>
-              <a href="#">cars</a>
-            </li>
-            <li>
-              <a href="#">cycle</a>
-            </li>
-            <li>
-              <a href="#">
-                view more
-                <span>
-                  <DownIcon />
-                </span>
-              </a>
-            </li>
+            <Warehouse_menu menu={"all"} />
+            <Warehouse_menu menu={"sports"} />
+            <Warehouse_menu menu={"men"} />
+            <Warehouse_menu menu={"woman"} />
+            <Warehouse_menu menu={"kids"} />
+            <Warehouse_menu menu={"jawelry"} />
+            <Warehouse_menu menu={"accessories"} />
+            <Warehouse_menu menu={"makeup"} />
+            <Warehouse_menu menu={"cars"} />
+            <Warehouse_menu menu={"cycles"} />
           </ul>
+          <li className="view-more">
+            <Link to="/">
+              view more
+              <span>
+                <DownIcon />
+              </span>
+            </Link>
+          </li>
         </div>
         <div className="warehouse-content">
           <div className="row">
@@ -87,13 +69,13 @@ function Warehouse() {
           </div>
 
           <div className="home__warehouseprods_sourcemorebtn">
-                <div className="home__warehouseprods_sourcemorebtntxt">
-                  Source More Deals
-                </div>
-                <div className="home__warehouseprods_sourcemorebtniconwrap">
-                  <DownIcon className="home__warehouseprods_sourcemorebtnicon" />
-                </div>
-              </div>
+            <div className="home__warehouseprods_sourcemorebtntxt">
+              Source More Deals
+            </div>
+            <div className="home__warehouseprods_sourcemorebtniconwrap">
+              <DownIcon className="home__warehouseprods_sourcemorebtnicon" />
+            </div>
+          </div>
         </div>
       </div>
     </sction>

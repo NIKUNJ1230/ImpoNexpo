@@ -25,17 +25,31 @@ p.centrixtool-head-p {
     justify-content: center;
     margin: 20px;
 }
-
+.centrix_star{
+    position: absolute;
+    right: 15%;
+    bottom: -5%;
+}
 .importer-boxesmain {
     max-width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 100px;
     justify-content: center;
+    position: relative;
 
 }
-
+.importer-boxesmain::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -7%;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 75px solid #F8E6F1;
+}
 .iporter-boxes-maindiv {
     width: 25%;
     border: 1px solid #979797;
@@ -46,11 +60,29 @@ p.centrixtool-head-p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s linear;
 }
 
-.importer-box-1-img-div {
+.iporter-boxes-maindiv:hover {
+    border-radius: 130px;
+    background-color: #00BAF2;
+}
+
+.iporter-boxes-maindiv:hover .importerbox-img-div {
+    background-color: white;
+}
+
+.iporter-boxes-maindiv:hover .importerbox-p {
+    color: black;
+}
+.iporter-boxes-maindiv:hover .importerbox-btn{
+    background-color: white;
+    color: black;
+}
+/* .importer-box-1-img-div {
     background-color: #fff;
     border-radius: 100%;
+    transition: all 0.3s linear;
     width: 227px;
 }
 
@@ -83,13 +115,14 @@ button.importer-box-1-btn {
 
 .importer-box-1-btn-div {
     margin: 20px 40px;
-}
+} */
 
 .importerbox-img-div {
     background-color: #00baf2;
     border-radius: 100%;
     width: 203px;
     margin: 20px 0;
+    transition: all 0.3s linear;
     padding: 25px;
 }
 
@@ -98,7 +131,7 @@ p.importerbox-p {
     font-weight: 500;
     color: #7C7676;
     text-align: center;
-
+    transition: all 0.3s linear;
 }
 
 button.importerbox-btn {
@@ -107,6 +140,7 @@ button.importerbox-btn {
     padding: 20px 35px;
     color: white;
     border-radius: 10px;
+    transition: all 0.3s linear;
 }
 
 .importerbox-btn-div {

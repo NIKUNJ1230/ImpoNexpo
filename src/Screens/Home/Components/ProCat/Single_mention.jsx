@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Single_mention({tag}) {
+function Single_mention({ tag }) {
   return (
     <li>
-      <a href="#">{tag}</a>
+      <Link to="/">{tag}</Link>
     </li>
   );
 }

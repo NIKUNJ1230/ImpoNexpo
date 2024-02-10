@@ -11,9 +11,11 @@
     /* overflow-x: hidden; */
     /* background-color: black; */
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 .container {
     /* max-width: 1320px; */
     padding: 0 5%;
@@ -25,7 +27,8 @@ a {
     text-decoration: none;
 }
 
-ul li {
+ul li,
+li {
     list-style: none;
 }
 
