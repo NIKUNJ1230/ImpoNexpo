@@ -1,0 +1,28 @@
+.workforce {
+    width: 100%;
+    height: auto;
+    background-color: #1D5DC7;
+    color: white;
+    padding: 20px 0;
+}
+
+.left-workforce h2 {
+    margin: 50px 0 60px;
+}
+
+.left-workforce p {
+    width: 50%;
+    margin: 50px 10px;
+}
+
+.workspace-img {
+    text-align: end;
+}
+
+.workforce-btn {
+    border: none;
+    padding: 25px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-left: 50px;
+}

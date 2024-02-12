@@ -1,0 +1,126 @@
+.w-70 {
+    width: 70%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.footer-main {
+    margin-top: 50px;
+    padding: 20px 50px;
+    background-color: #00BAF2;
+    position: relative;
+}
+
+
+.footer-main-title h5 {
+    text-align: center;
+}
+
+.email-form {
+    width: 25%;
+    margin: 20px auto;
+}
+
+.footer-main .email-form input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    border: none;
+}
+
+.email-form-btn {
+    padding: 3px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 0 30px 30px 0;
+    background-color: white;
+    text-align: end;
+}
+
+.email-form-btn button {
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #00BAF2;
+
+}
+
+.footer-main-content {
+    border-top: 2px solid #076E8D;
+    margin: 50px 50px 0;
+    padding: 50px 0;
+}
+
+.single_footer_content ul li {
+    margin: 20px 0;
+}
+
+.single_footer_content ul li a {
+    color: #111111;
+}
+
+.footer-main-bottom {
+    padding: 30px 0;
+    background-color: white;
+}
+
+.footer-main-bottom h4 {
+    color: #00BAF2;
+    margin-bottom: 10px;
+}
+
+.payment-images img {
+    margin: 0 5px;
+}
+
+.social-icon a {
+    background-color: #00BAF2;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.social-icon a i {
+    padding: 10px;
+    color: white;
+}
+
+.qr-code {
+    margin-right: 10px;
+}
+
+.footer-main-logo-img{
+    background-color: #1D5DC6;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-main-logo h5:last-child {
+    color: #FF7313;
+}
+.footer-main-downloads{
+    display: flex;
+    align-items: center;
+}
+.down-store{
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.app-logo{
+    margin-right: 10px;
+}
+.rights-reserved{
+    margin-top: 50px;
+    text-align: center;
+    color: #1D5DC7 ;
+}

@@ -15,10 +15,13 @@ import Warehouse from "./Components/Warehouse/Warehouse";
 import ProCat from "./Components/ProCat/ProCat";
 import Region from "./Components/Region/Region";
 import Footer from "./Components/Footer/Footer";
+import Fetursindex from "../../Components/FeturesFrom/Fetursindex";
+import Usercard from "./Components/UserProductCard/Usercard";
+import UserProductCard from "./Components/UserProductCard/UserProductCard";
 const Home = () => {
   return (
     <div className="home__screen">
-      <Topbar />
+      {/* <Topbar />
       <Navbar />
       <Hero />
       <Trending />
@@ -32,8 +35,14 @@ const Home = () => {
       <AboutUs />
       <Region />
       <Warehouse />
-      <Footer />
+      <Footer /> */}
+      {/* <Fetursindex /> */}
+      <UserProductCard />
+
+
+      
     </div>
+
   );
 };
 

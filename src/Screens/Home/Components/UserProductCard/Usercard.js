@@ -5,6 +5,7 @@ import userfollow from "../../../../assets/images/userfollow.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import usersliderimg from "../../../../assets/images/usercardsliderimg.svg";
 
 export default function Usercard() {
   var settings = {
@@ -57,10 +58,23 @@ export default function Usercard() {
         <div className="usercard-containt-main">
           <div className="usercard-containt-slider">
             <Slider {...settings}>
-                
+                <div className="usercard-containt-slider"> 
+                  <img src={usersliderimg} alt="" />
+                </div>
+                <div className="usercard-containt-slider"> 
+                  <img src={usersliderimg} alt="" />
+                </div>
+                <div className="usercard-containt-slider"> 
+                  <img src={usersliderimg} alt="" />
+                </div>
+                <div className="usercard-containt-slider">
+                  <img src={usersliderimg} alt="" />
+                </div>
             </Slider>
           </div>
-          <div></div>
+          <div>
+
+          </div>
           <div></div>
           <div></div>
         </div>

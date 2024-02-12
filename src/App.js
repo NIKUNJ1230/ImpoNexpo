@@ -2,6 +2,7 @@ import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Screens/Home/Home";
+import Testimonial from "./Screens/Testimonials/Testimonial.jsx";
 import Welcome from "./Screens/Auth/Welcome";
 import Login from "./Screens/Auth/Login";
 import ForgotPassword from "./Screens/Auth/ForgotPassword";
@@ -62,6 +63,7 @@ function App() {
           />
           <Route path="/new-password/:token" element={<NewPassword />} />
           <Route path="/" element={<Home />} />
+          <Route path="/testimonial" element={ <Testimonial />} />
           {/* Example of a role-protected route */}
           <Route
             path="/admin"

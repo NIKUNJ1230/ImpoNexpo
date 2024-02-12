@@ -1,0 +1,71 @@
+.possible-buttons {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.possible-buttons .possible-btn {
+    padding: 10px 30px;
+    border: 2px solid #00BAF2;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 0 10px;
+    transition: all 0.3s linear;
+    font-weight: 500;
+}
+
+.possible-buttons .possible-btn:hover {
+    background-color: #00BAF2;
+    color: white;
+    border: 2px solid #F26D21;
+}
+
+.possible-left {
+    background-color: #00BAF2;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.possible-left .possible-left-title h3 {
+    font-size: 30px;
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.possible-left .possible-left-content p {
+    width: 60%;
+    line-height: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.possible-right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next {
+    background-color: red;
+}

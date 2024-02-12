@@ -1,0 +1,50 @@
+.w-60{
+    width: 60%;
+}
+.w-40{
+    width: 40%;
+}
+.full-testimonial{
+    width: 100%;
+    height: auto;
+    background-color: #95E6FF;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 100px;
+}
+.full-testimonial .full-left-testimonial{
+    background-color: white;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.full-left-testimonial .full-left-testimonial-text {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    font-weight: 500;
+}
+.full-left-testimonial .full-left-testimonial-text img{
+    position: absolute;
+    top: -20%;
+    left: -5%;
+}
+
+.full-left-testimonial .full-left-testimonial-content{
+    width: 80%;
+    margin: 30px auto 0;
+}
+
+.full-left-testimonial-content p {
+    color: #747487;
+    width: 80%;
+}
+.full-testimonial .full-right-testimonial h3{
+    font-size: 30px;
+}
+.full-testimonial .full-right-testimonial p {
+    line-height: 25px;
+    margin: 20px 0;
+}
