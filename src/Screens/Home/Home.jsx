@@ -38,8 +38,6 @@ const Home = () => {
       <Footer /> */}
       {/* <Fetursindex /> */}
       <UserProductCard />
-
-
       
     </div>
 
