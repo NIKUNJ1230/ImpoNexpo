@@ -1,0 +1,33 @@
+.time-bound-title{
+    text-align: center;
+    margin: 70px 0 50px;
+}
+.time-bound-title h2{
+    text-transform: capitalize;
+    font-size: 48px;
+}
+
+.time-bound-menu ul {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.time-bound-menu ul li a{
+    background-color: black;
+    padding: 20px 50px;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    border-radius: 40px;
+    border: 5px solid #30C7F4;
+    transition: all 0.3s linear;
+}
+.time-bound-menu ul li a:hover{
+    background-color: #30C7F4;
+}
+.border-under{
+    border-bottom: 1px solid gray;
+}

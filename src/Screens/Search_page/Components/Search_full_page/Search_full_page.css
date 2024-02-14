@@ -1,0 +1,80 @@
+.search-menu ul {
+    display: flex;
+
+}
+
+.search-menu ul li a {
+    color: black;
+    font-weight: 500;
+    padding: 12px 16px;
+    margin: 0 5px;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.3s linear;
+}
+
+.search-menu ul li a:hover {
+    background-color: #1071FF;
+    color: white;
+}
+
+
+.search__fullprods_section .slick-prev {
+    left: 3% !important;
+    border: none !important;
+    background-color: transparent !important;
+    z-index: 1;
+}
+
+.search__fullprods_section .slick-next {
+    border: none !important;
+    background-color: transparent !important;
+    right: 3% !important;
+}
+
+.search__fullprods_section .slick-prev:hover::before,
+.search__fullprods_section .slick-next:hover::before {
+    color: #FF2E5F !important;
+
+}
+
+.search__fullprods_section .slick-prev::before,
+.search__fullprods_section .slick-next::before {
+    color: white !important;
+    font-size: 30px !important;
+}
+
+.search__fullprods_cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.search__fullprods_card {
+    margin: 10px;
+    width: 100% !important;
+}
+
+.slickcarousal__arrow {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: rgba(0, 0, 0, 0.73) !important;
+}
+
+.loading-search {
+    margin: 0 0 50px;
+    text-align: center;
+}
+
+.load-more {
+    color: #2200F2;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 500;
+}

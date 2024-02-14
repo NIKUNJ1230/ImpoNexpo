@@ -1,0 +1,28 @@
+.category-deals-title {
+    text-align: center;
+}
+.category-deals-title li{
+    list-style: disc;
+    font-size: 100px;
+    font-weight: 500;
+    width: 80%;
+    text-transform: capitalize;
+    margin: 50px auto 30px;
+}
+.single-category-deals{
+    text-align: center;
+    width: 90%;
+    margin: 15px 10%;
+}
+.category-deals-title p{
+    font-size: 14px;
+    color: #46474A;
+    font-weight: 500;
+}
+.category-deals-img a {
+    width: 100%;
+}
+.category-deals-img a img{
+    width: 100%;
+    display: block;
+}

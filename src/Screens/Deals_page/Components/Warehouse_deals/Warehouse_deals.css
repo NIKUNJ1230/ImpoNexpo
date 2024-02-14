@@ -1,0 +1,23 @@
+.warehouse-img{
+    width: 100%;
+}
+.warehouse-img img{
+    width: 100%;
+    display: block;
+}
+
+.warehouse-deals-content {
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.warehouse-deals-content p{
+    margin: 10px 0 30px;
+}
+
+.warehouse-deals-btn a{
+    color: black;
+    border: 2px solid black;;
+    padding: 10px 20px;
+    border-radius: 30px;
+}

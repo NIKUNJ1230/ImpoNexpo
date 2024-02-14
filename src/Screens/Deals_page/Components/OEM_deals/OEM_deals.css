@@ -1,0 +1,79 @@
+.oem-deals {
+    /* margin-top: 50px; */
+    background-color: #77BBE8;
+    width: calc(100% - 50px);
+    height: auto;
+    margin: 0 50px;
+    padding: 100px 50px;
+}
+
+.single-oem-deals {
+    background-color: white;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.single-oem-img {
+    width: 100%;
+}
+
+.single-oem-img img {
+    width: 100%;
+    display: block;
+}
+
+.single-oem-title p {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 20px;
+}
+
+.brand-deals-title {
+    margin: 60px 0 30px;
+}
+
+.brand-deals-brands {
+    margin-bottom: 100px;
+}
+
+.brand-deals-brands ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-deals-brands ul li {
+    margin: 15px;
+
+}
+
+.brand-deals-brands ul li span {
+    border: 2px solid #84B5DE;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #0A6CBD;
+}
+
+.saving-deals-title {
+    text-align: center;
+}
+.saving-deals{
+    margin-bottom: 100px;
+}
+.saving-deals-title p {
+    margin: 10px 0 30px;
+    color: #555555;
+    font-weight: 500;
+}
+
+.single-saving-deals {
+    text-align: center;
+}
+
+.single-saving-deals-content h4{
+    margin: 30px 0 5px;
+}
+.single-saving-deals-content p{
+    font-size: 16px;
+}

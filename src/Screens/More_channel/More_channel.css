@@ -1,0 +1,43 @@
+.more-channel .home__trendingprods_hstar {
+  left: -30%;
+}
+
+.more-channel .home__trendingprods_hcrown {
+  display: none;
+}
+
+.more-channel .deals-section .home__trendingprods_heading {
+  display: block;
+}
+
+.more-channel .home__trendingprods_section {
+  position: relative;
+}
+
+.more-channel .home__trendingprods_section::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 75px solid #E9B9D9;
+  top: 0;
+  left: -7%;
+  border-radius: 50%;
+}
+
+.more-channel .home__trendingprods_section::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 75px solid #E9B9D9;
+  bottom: 0;
+  right: -7%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.more-channel .pro-cat-section{
+  margin: 50px 0;
+  border-bottom: 1px solid gray;
+}

@@ -1,0 +1,16 @@
+.services_deals{
+    background-color: #77BBE8;
+    width: 100%;
+    height: auto;
+    padding: 100px 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-bottom: 70px;
+}
+.services-deals-img{
+    width: 100%;
+
+}
+.services-deals-img img{
+    width: 100%;
+    display: block;
+}

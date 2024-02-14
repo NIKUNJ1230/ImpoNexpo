@@ -1,0 +1,62 @@
+.pro-cat-section .home__trendingprods_blackstar {
+    position: absolute;
+    top: -50%;
+    right: 20%;
+}
+
+.single-pro-cat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.single-pro-cat-img {
+    width: 90%;
+    height: 90%;
+    background-color: #00BAF2;
+    border-radius: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.single-pro-cat-title h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.single-pro-cat-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.single-pro-cat:hover .single-pro-cat-title h3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pro-cat-section .home__trendprods_sourcemorebtn {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-cat {
+    position: relative;
+}
+
+.product-cat::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 100px solid #E9B9D9;
+    top: 50%;
+    left: -15%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}

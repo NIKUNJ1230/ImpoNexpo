@@ -1,0 +1,33 @@
+.follow-deals-title h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 50px;
+}
+.single-follow-deals{
+    width: 95%;
+}
+.single-deals-img{
+    width: 100%;
+}
+.single-deals-img img{
+    width: 100%;
+    display: block;
+}
+.single-follow-content{
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.single-follow-content p{
+    font-size: 12px;
+    margin: 10px 0 30px;
+}
+
+.single-follow-btn a{
+    font-size: 12px;
+    background-color: #0171DD;
+    padding: 10px 20px;
+    border-radius: 35px;
+    color: white;
+    font-weight: 500;
+}

@@ -1,0 +1,25 @@
+.clearance-deals{
+    margin: 30px 0 20px;
+    text-align: center;
+}
+.single-clearance-deals{
+    width: 90%;
+}
+.single-clearance-deals-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-clearance-deals-img img{
+    width: 100%;
+    display: block;
+}
+
+.clearance-title{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #46474A;
+    font-weight: 500;
+}

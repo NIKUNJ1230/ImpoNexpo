@@ -1,0 +1,27 @@
+.category-page-title{
+    border-bottom: 1px solid #E3E4E5;
+    padding-bottom: 30px;
+}
+.category-page-categories{
+    padding: 25px 0;
+}
+.single-category-page{
+    padding: 24px;
+    /* background-color: red; */
+    height: 950px;
+    box-shadow: 0px 5px 5px 2px #00000026;
+    border: 3px solid #7AC0D5;
+    border-radius: 5px;
+    /* width: 95%; */
+    margin: 15px;
+
+}
+.single-category-title{
+    margin-bottom: 30px;
+}
+.category-list ul li a{
+    font-size: 12px;
+    color: #46474A;
+    font-weight: 500;
+    margin: 10px 0;
+}
