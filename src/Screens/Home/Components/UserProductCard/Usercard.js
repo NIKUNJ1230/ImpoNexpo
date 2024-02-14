@@ -9,6 +9,7 @@ import usercardheartlogo from "../../../../assets/images/usercardprologoheart.sv
 import usercardmessgelogo from "../../../../assets/images/usercardpromessgelogo.svg";
 import usercardsharelogo from "../../../../assets/images/usercardprosharelogo.svg";
 import usercardfilelogo from "../../../../assets/images/usercardprofilelogo.svg";
+import "./usercard-product.css";
 
 export default function Usercard() {
   return (
@@ -53,7 +54,11 @@ export default function Usercard() {
         </div>
         <div className="usercard-containt-main">
           <div className="usercard-containt-slider">
-            <img src={usersliderimg} alt="" />
+            <img
+              src={usersliderimg}
+              alt=""
+              className="usercard-containt-sliderimg"
+            />
           </div>
           <div className="usercard-product-main-div">
             <div className="usercard-product-header-main">
@@ -65,7 +70,7 @@ export default function Usercard() {
                 <li className="usercard-header-li"> OEM</li>
               </ul>
             </div>
-            <div>
+            <div className="usercard-pro-img-main-div">
               <div className="usercard-pro-img-main">
                 <UsercardProductimg img={userproimg} />
               </div>
@@ -129,8 +134,46 @@ export default function Usercard() {
               </button>
             </div>
           </div>
-          <div></div>
-          <div></div>
+          <div className="usercard-discription-main">
+            <p className="usercard-discription-p1">Seller’s Capacity</p>
+            <ul className="usercard-discription-ul1">
+              <li className="usercard-discription-li">
+                · ODM service available
+              </li>
+              <li className="usercard-discription-li">
+                · OEM for well-known brands
+              </li>
+              <li className="usercard-discription-li">
+                {" "}
+                · Finished product inspection
+              </li>
+              <li className="usercard-discription-li">· Full customization</li>
+              <li className="usercard-discription-li">· Patents awarded (6)</li>
+            </ul>
+            <button className="usercard-discription-last-btn">
+              {" "}
+              Contact Supplier
+            </button>
+          </div>
+          <div className="usercard-discription-main-2">
+            <p className="usercard-discription-p1">Summary on Imponexpo</p>
+            <ul className="usercard-discription-ul1">
+              <li className="usercard-discription-li">
+                · 1 Year Wih Imponexpo
+              </li>
+              <li className="usercard-discription-li">
+                · 50 Products Sold on Imponexpo
+              </li>
+              <li className="usercard-discription-li">
+                · Finished product inspection
+              </li>
+              <li className="usercard-discription-li">· Full customization</li>
+              <li className="usercard-discription-li">· Patents awarded (6)</li>
+            </ul>
+            <button className="usercard-discription-last-btn-2">
+              View profile
+            </button>
+          </div>
         </div>
       </div>
     </div>
