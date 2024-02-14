@@ -21,7 +21,7 @@ import UserProductCard from "./Components/UserProductCard/UserProductCard";
 const Home = () => {
   return (
     <div className="home__screen">
-      {/* <Topbar />
+      <Topbar />
       <Navbar />
       <Hero />
       <Trending />
@@ -35,8 +35,7 @@ const Home = () => {
       <AboutUs />
       <Region />
       <Warehouse />
-      <Footer /> */}
-      {/* <Fetursindex /> */}
+      <Footer />
       <UserProductCard />
       
     </div>
