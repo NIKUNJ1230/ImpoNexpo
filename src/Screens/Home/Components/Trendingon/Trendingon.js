@@ -3,6 +3,7 @@ import crown from "../../../../assets/images/crownblack.svg";
 import "./Trendingon.css";
 import star_black from "../../../../assets/images/star_black.svg";
 import Trendingon_tag from "./Trendingon_tag";
+import { Link } from "react-router-dom";
 
 function Trendingon() {
   return (
@@ -16,22 +17,22 @@ function Trendingon() {
       </div>
       <div className="trendingon-tags-main">
         <ul className="trendingon-tags-ui">
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
-          <Trendingon_tag tag={"#Mongbabal"}/>
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
+          <Trendingon_tag tag={"#Mongbabal"} />
 
           {/* <li>#Mongbabal</li>
                     <li>#Mongbabal</li>
@@ -50,7 +51,9 @@ function Trendingon() {
       </div>
       <img src={star_black} alt="" className="trendingon-start" />
       <div className="trendingon-btn-div">
-        <button className="trendingon-btn">See All</button>
+        <Link to="/userproductcard">
+          <button className="trendingon-btn">See All</button>
+        </Link>
       </div>
     </div>
   );

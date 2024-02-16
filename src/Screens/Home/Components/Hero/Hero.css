@@ -1,7 +1,7 @@
 :root {
-    --theme: #1D5DC7;
-    --theme-border: #00BAF2;
-    --text-secondary: #7C7C7C;
+    --theme: #1d5dc7;
+    --theme-border: #00baf2;
+    --text-secondary: #7c7c7c;
 }
 
 * {
@@ -21,12 +21,11 @@ body {
     padding: 0 5%;
     margin: 0 auto;
 }
-
 a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
 }
-
 ul li,
 li {
     list-style: none;
@@ -112,7 +111,7 @@ li {
 
 .offer .slick-prev,
 .offer .slick-next {
-    background-color: #A9C4FB !important;
+    background-color: #a9c4fb !important;
     border-radius: 50%;
     width: 60px !important;
     height: 60px !important;
@@ -134,7 +133,7 @@ li {
     color: transparent !important;
     border-radius: 50%;
     opacity: 1 !important;
-    background-color: #D9D9D9 !important;
+    background-color: #d9d9d9 !important;
 }
 
 .offer .slick-dots .slick-active button::before {
@@ -178,13 +177,13 @@ li {
 .categoty-title h3 {
     text-align: center;
     text-transform: capitalize;
-    color: #3972D0;
+    color: #3972d0;
     margin-left: 15px;
 }
 
 .categoty-list ul li {
     padding: 10px 15px;
-    background-color: #00BAF2;
+    background-color: #00baf2;
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -214,7 +213,7 @@ li {
 
 .offer-right ul {
     margin: 20px 0;
-    color: #4E4E4E;
+    color: #4e4e4e;
     padding-left: 20px;
 }
 
@@ -230,22 +229,24 @@ li {
     padding: 13px 20px;
     border: 1px solid transparent;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     margin: 7px 0;
 }
 
 .offer-right .quatation-form input:focus,
 .offer-right .quatation-form textarea:focus {
-    border: 1px solid #00BAF2;
+    border: 1px solid #00baf2;
 }
 
 .offer-right .quatation-form textarea:focus {
-    outline: 1px solid #00BAF2;
+    outline: 1px solid #00baf2;
 }
 
 .offer-right .quatation-form input::placeholder,
 .offer-right .quatation-form textarea::placeholder {
-    color: #00BAF2;
+    color: #00baf2;
 }
 
 .half-input {
@@ -257,7 +258,7 @@ li {
 }
 
 .offer-right .quatation-form button {
-    background-color: #1D5DC7;
+    background-color: #1d5dc7;
     border: none;
     color: white;
     border-radius: 5px;
@@ -265,5 +266,7 @@ li {
     font-size: 16px;
     font-weight: 500;
     margin: 15px 0;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }

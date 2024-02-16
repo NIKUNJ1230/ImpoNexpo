@@ -26,20 +26,20 @@ function Possible() {
                 </div>
                 <div className="w-2">
                     <div className="possible-right">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">Slide 1</div>
-                                <div class="swiper-slide">Slide 2</div>
-                                <div class="swiper-slide">Slide 3</div>
-                                <div class="swiper-slide">Slide 4</div>
-                                <div class="swiper-slide">Slide 5</div>
-                                <div class="swiper-slide">Slide 6</div>
-                                <div class="swiper-slide">Slide 7</div>
-                                <div class="swiper-slide">Slide 8</div>
-                                <div class="swiper-slide">Slide 9</div>
+                        <div className="swiper mySwiper">
+                            <div className="swiper-wrapper">
+                                <div className="swiper-slide">Slide 1</div>
+                                <div className="swiper-slide">Slide 2</div>
+                                <div className="swiper-slide">Slide 3</div>
+                                <div className="swiper-slide">Slide 4</div>
+                                <div className="swiper-slide">Slide 5</div>
+                                <div className="swiper-slide">Slide 6</div>
+                                <div className="swiper-slide">Slide 7</div>
+                                <div className="swiper-slide">Slide 8</div>
+                                <div className="swiper-slide">Slide 9</div>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            <div className="swiper-button-next"></div>
+                            <div className="swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>

@@ -67,6 +67,7 @@ const Register = () => {
   };
 
   return (
+
     <div className="registration__form_screen">
       <div className="registration__form_left">
         <div className="registration__form_lheading">
@@ -153,9 +154,9 @@ const Register = () => {
                 country={"us"}
                 value={data.mobileNumber}
                 onChange={(phone) => handleFieldChange("mobileNumber", phone)}
-                containerClass="login__form_phoneinputcontainer"
-                inputClass="login__form_phoneinputfield"
-                buttonClass="login__form_phoneinputdrop"
+                containerclassName="login__form_phoneinputcontainer"
+                inputclassName="login__form_phoneinputfield"
+                buttonclassName="login__form_phoneinputdrop"
               />
             </div>
           </div>

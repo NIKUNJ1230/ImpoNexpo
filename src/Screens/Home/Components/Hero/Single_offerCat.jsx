@@ -9,7 +9,7 @@ function Single_offerCat({ cat_name }) {
       {/* <i>
         <FontAwesomeIcon icon={faAngleRight} />{" "}
       </i> */}
-      <i class="fa-solid fa-angle-right"></i>
+      <i className="fa-solid fa-angle-right"></i>
     </li>
   );
 }

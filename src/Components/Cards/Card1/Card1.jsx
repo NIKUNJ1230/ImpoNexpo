@@ -133,10 +133,12 @@ const Card1 = () => {
           <Diversity3Icon className="card1__components_fbtnicn" />
           Group Import
         </div>
-        <div className="card1__components_fbtn">
-          <MarkUnreadChatAltRoundedIcon className="card1__components_fbtnicn" />
-          Contact Exporter
-        </div>
+        <Link to="/Chat">
+          <div className="card1__components_fbtn">
+            <MarkUnreadChatAltRoundedIcon className="card1__components_fbtnicn" />
+            Contact Exporter
+          </div>
+        </Link>
       </div>
     </div>
   );

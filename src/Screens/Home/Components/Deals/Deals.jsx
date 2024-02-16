@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "./Deals.css";
 import Crown from "../../../../assets/images/headingcrown.png";
@@ -6,7 +6,11 @@ import Card from "../../../../Components/Cards/Card/Card";
 import Star from "../../../../assets/images/redstar.png";
 import DownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Deals_category from "./Deals_category";
+import { Link } from "react-router-dom";
 const Deals = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section>
       <div className="container">
@@ -65,14 +69,16 @@ const Deals = () => {
                   <Card />
                 </div>
               </div>
-              <div className="home__dealsprods_sourcemorebtn">
-                <div className="home__dealsprods_sourcemorebtntxt">
-                  Source More Deals
+              <Link to="/Deals_page">
+                <div className="home__dealsprods_sourcemorebtn">
+                  <div className="home__dealsprods_sourcemorebtntxt">
+                    Source More Deals
+                  </div>
+                  <div className="home__dealsprods_sourcemorebtniconwrap">
+                    <DownIcon className="home__dealsprods_sourcemorebtnicon" />
+                  </div>
                 </div>
-                <div className="home__dealsprods_sourcemorebtniconwrap">
-                  <DownIcon className="home__dealsprods_sourcemorebtnicon" />
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -35,7 +35,7 @@ function User_Stories() {
                         <div className="w-4">
                             <div className="user-stories-search">
                                 <div className="user-search-icon">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <i className="fa-solid fa-magnifying-glass"></i>
                                 </div>
                                 <input type="search" name='user_stories_search' placeholder='Search' />
                             </div>

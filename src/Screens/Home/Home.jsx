@@ -18,6 +18,7 @@ import Footer from "./Components/Footer/Footer";
 import Fetursindex from "../../Components/FeturesFrom/Fetursindex";
 import Usercard from "./Components/UserProductCard/Usercard";
 import UserProductCard from "./Components/UserProductCard/UserProductCard";
+import Deals_page from "../Deals_page/Deals_page";
 const Home = () => {
   return (
     <div className="home__screen">
@@ -37,9 +38,9 @@ const Home = () => {
       <Warehouse />
       <Footer />
       <UserProductCard />
+
       
     </div>
-
   );
 };
 

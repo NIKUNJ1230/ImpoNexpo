@@ -15,16 +15,16 @@ function Full_left_banner({ path1, path2, path3, title, text }) {
                 </div>
                 <div className="full-banner-social-icon">
                     <div>
-                        <i class="fa-brands fa-facebook-f"></i>
+                        <i className="fa-brands fa-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="fa-brands fa-twitter"></i>
+                        <i className="fa-brands fa-twitter"></i>
                     </div>
                     <div>
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i className="fa-brands fa-linkedin-in"></i>
                     </div>
                     <div>
-                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <i className="fa-solid fa-file-arrow-down"></i>
                     </div>
                 </div>
             </div>

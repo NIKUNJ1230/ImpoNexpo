@@ -8,6 +8,7 @@ import Card1 from "../../../../Components/Cards/Card1/Card1";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
+import { Link } from "react-router-dom";
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -139,9 +140,11 @@ const Trending = () => {
         <div className="home__trendprods_sourcemorebtntxt">
           Source More Channels
         </div>
-        <div className="home__trendprods_sourcemorebtniconwrap">
-          <DownIcon className="home__trendprods_sourcemorebtnicon" />
-        </div>
+        <Link to="/More_channel">
+          <div className="home__trendprods_sourcemorebtniconwrap">
+            <DownIcon className="home__trendprods_sourcemorebtnicon" />
+          </div>
+        </Link>
       </div>
     </div>
   );

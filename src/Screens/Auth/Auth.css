@@ -1,11 +1,11 @@
 .auth__screen {
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow-y: auto;
   display: flex;
   justify-content: center;
-  padding: 20px;
-  padding-top: 12vh;
+  padding:0 0 20px 0;
+  /* padding-top: 12vh; */
 }
 .welcome__screen_box {
   border-radius: 13px;

@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Hero.css"
+import "./Hero.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import offer1 from "../../../../assets/images/offer.svg";
@@ -16,6 +16,8 @@ import list from "../../../../assets/images/list.svg";
 // } from "@fortawesome/free-solid-svg-icons";
 import Single_offer from "./Single_offer";
 import Single_offerCat from "./Single_offerCat";
+import { Link } from "react-router-dom";
+ 
 
 function Hero() {
   const settings = {
@@ -117,6 +119,7 @@ function Hero() {
                     />
                   </div>
                   <div className="d-flex align-center justify-center">
+                    <Link to="/"></Link>
                     <button type="submit">Request For Quotation</button>
                   </div>
                 </form>

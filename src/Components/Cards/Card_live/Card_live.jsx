@@ -14,6 +14,16 @@ import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import MarkUnreadChatAltRoundedIcon from "@mui/icons-material/MarkUnreadChatAltRounded";
+
+
+// function showButtons() {
+//   $('#buttonModal').modal('show');
+// }
+
+// function chooseOption(option) {
+//   alert('You selected ' + option);
+//   $('#buttonModal').modal('hide');
+// }
 const Card_live = () => {
   const [playing, setPlaying] = useState(false);
 

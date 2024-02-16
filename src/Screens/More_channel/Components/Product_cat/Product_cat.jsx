@@ -4,6 +4,7 @@ import cat from "../../../../assets/images/importer-2.svg"
 import DownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Star from "../../../../assets/images/star_black.svg"
 import Single_pro_cat from './Single_pro_cat';
+import { Link } from 'react-router-dom';
 function Product_cat() {
     return (
         <div className='pro-cat-section'>
@@ -30,6 +31,7 @@ function Product_cat() {
                         <div className="home__trendprods_sourcemorebtntxt">
                             Source More Channels
                         </div>
+
                         <div className="home__trendprods_sourcemorebtniconwrap">
                             <DownIcon className="home__trendprods_sourcemorebtnicon" />
                         </div>

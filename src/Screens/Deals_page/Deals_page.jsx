@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Deals_page.css"
 import Topbar from "../../Components/Topbar/Topbar";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -16,6 +16,9 @@ import Services_deals from './Components/Services_deals/Services_deals';
 import Follow_deals from './Components/Follow_deals/Follow_deals';
 import OEM_deals from './Components/OEM_deals/OEM_deals';
 function Deals_page() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='deals-page'>
       <Topbar />

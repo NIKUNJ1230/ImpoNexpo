@@ -114,19 +114,19 @@ function Footer() {
               <h4>Follows Us</h4>
               <div className="social-icon">
                 <Link to="/">
-                  <i class="fa-brands fa-facebook"></i>
+                  <i className="fa-brands fa-facebook"></i>
                 </Link>
                 <Link to="/">
-                  <i class="fa-brands fa-skype"></i>
+                  <i className="fa-brands fa-skype"></i>
                 </Link>
                 <Link to="/">
-                  <i class="fa-brands fa-pinterest"></i>
+                  <i className="fa-brands fa-pinterest"></i>
                 </Link>
                 <Link to="/">
-                  <i class="fa-brands fa-google-play"></i>
+                  <i className="fa-brands fa-google-play"></i>
                 </Link>
                 <Link to="/">
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </Link>
               </div>
             </div>

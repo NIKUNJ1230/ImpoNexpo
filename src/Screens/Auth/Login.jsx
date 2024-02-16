@@ -91,9 +91,9 @@ const Login = () => {
               country={"us"}
               value={data.login}
               onChange={(phone) => handleFieldChange("login", phone)}
-              containerClass="login__form_phoneinputcontainer"
-              inputClass="login__form_phoneinputfield"
-              buttonClass="login__form_phoneinputdrop"
+              containerclassName="login__form_phoneinputcontainer"
+              inputclassName="login__form_phoneinputfield"
+              buttonclassName="login__form_phoneinputdrop"
             />
           </div>
         )}
