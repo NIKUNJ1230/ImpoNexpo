@@ -28,8 +28,8 @@ function Hero() {
   };
   return (
     <section className="offer">
-      <div className="container">
-        <div className="row">
+      <div className="container-fluid ">
+        <div className="row p-5">
           <div className="w-60">
             <div className="slider-container">
               <Slider {...settings}>
