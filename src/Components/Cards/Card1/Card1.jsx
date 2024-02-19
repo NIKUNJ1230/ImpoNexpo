@@ -14,8 +14,14 @@ import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import MarkUnreadChatAltRoundedIcon from "@mui/icons-material/MarkUnreadChatAltRounded";
+import AbouteProduct from "../../../routes";
 const Card1 = () => {
   const [playing, setPlaying] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisible = () => {
+    setIsVisible(!isVisible)
+  }
 
   const togglePlayPause = () => {
     setPlaying(!playing); // Toggle the playing state
@@ -124,15 +130,28 @@ const Card1 = () => {
         <div className="card1__component_priceleft">$4.45- $6.5</div>
         <div className="card1__component_priceright">Min orders: 20 Units</div>
       </div>
+
+
+
+      {isVisible && (<div className="card1__components_gbtn">
+        <Link to="/">Initiate a Group Buy</Link>
+        <Link to="/">Join a Group Buy</Link>
+      </div>
+      )}
       <div className="card1__components_footer">
+        <Link to="/AbouteProduct" >
+          {/* <AbouteProduct /> */}
         <div className="card1__components_fbtn">
           <ShoppingCartIcon className="card1__components_fbtnicn" />
           Order Now
         </div>
-        <div className="card1__components_fbtn">
+         </Link>
+        
+        <div className="card1__components_fbtn" onClick={toggleVisible}>
           <Diversity3Icon className="card1__components_fbtnicn" />
           Group Import
         </div>
+
         <Link to="/Chat">
           <div className="card1__components_fbtn">
             <MarkUnreadChatAltRoundedIcon className="card1__components_fbtnicn" />

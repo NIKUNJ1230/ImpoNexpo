@@ -19,10 +19,14 @@ import Fetursindex from "../../Components/FeturesFrom/Fetursindex";
 import Usercard from "./Components/UserProductCard/Usercard";
 import UserProductCard from "./Components/UserProductCard/UserProductCard";
 import Deals_page from "../Deals_page/Deals_page";
+import Example from "../share";
+import ProductShare from "../../Components/Cards/Card_live/Shareproduct";
+import ProcardDemo from "../../Components/Procard-extra/Procard-demo";
+import AbouteProduct from "../../routes";
 const Home = () => {
   return (
     <div className="home__screen">
-      <Topbar />
+      {/* <Topbar />
       <Navbar />
       <Hero />
       <Trending />
@@ -38,8 +42,9 @@ const Home = () => {
       <Warehouse />
       <Footer />
       <UserProductCard />
-
-      
+      <ProductShare />        */}
+      {/* <ProcardDemo /> */}
+      <AbouteProduct />
     </div>
   );
 };

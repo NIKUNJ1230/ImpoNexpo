@@ -1,0 +1,147 @@
+.single-product .user-county .country-name {
+    color: #8B96A5;
+}
+
+.image-gallery-icon {
+    height: 50px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #F6F8FB !important;
+    filter: unset !important;
+    padding: 0 !important;
+}
+
+.image-gallery-icon .image-gallery-svg {
+    height: 40px !important;
+    stroke: #000000;
+    width: 50px !important;
+}
+
+.thumbnail-prev {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-offer {
+    width: 60px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    background-color: #FF7E27;
+    position: absolute;
+    left: 120px;
+    top: 48px;
+    z-index: 1;
+}
+
+.product-zoom {
+   position: absolute;
+    bottom: 48px;
+    right: 15px;
+}
+
+.product-favrite {
+    position: absolute;
+    right: 15px;
+    top: 48px;
+    z-index: 1;
+}
+
+.image-gallery-slide-wrapper.image-gallery-thumbnails-left {
+    border: 1px solid #E6EFFB;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+.image-gallery-thumbnail-inner {
+    border: 1px solid #E6EFFB;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.image-gallery-thumbnail.active {
+    border: 1px solid #1071FF !important;
+    border-radius: 8px;
+}
+
+.text-gray {
+    color: #8B96A5 !important;
+}
+
+.product-price-block {
+    background-color: #FFF0DF;
+    padding: 10px;
+}
+
+.border-left-1 {
+    border-left: 1px solid #BDC1C8;
+}
+
+.box-boder {
+    border: 1px solid #DEE2E7;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.product-tab .nav-item button {
+    color: #8B96A5;
+    font-weight: bold;
+    border-bottom: 2px solid #8B96A5;
+    border: 2px solid #ffffff;
+}
+
+.product-future-list {
+    list-style: unset;
+    padding-left: 0;
+}
+
+.product-tab {
+    border-bottom: 0;
+}
+
+.product-tab .nav-item:not(:first-child) button {
+    margin-left: 30px;
+}
+.product-tab .nav-item button.active {
+    border-bottom: 2px solid #0D6EFD !important;
+    border: 2px solid #ffffff;
+    color: #0D6EFD;
+}
+
+.tab-content {
+    border: 1px solid #DEE2E7;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.table-title {
+    background-color: #EFF2F4 !important;
+}
+
+.text-orange {
+    color: #FF7E27;
+}
+
+.text-light-blue {
+    color: #1170b7;
+}
+
+.react-datepicker__input-container input {
+    padding: 6px 12px;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    color: #4E4E4E;
+}
+.react-datepicker__input-container {
+    display: flex;
+    align-items: center;
+}
+
+.order-btn-hover:hover svg path {
+    stroke: #FFFFFF;
+}

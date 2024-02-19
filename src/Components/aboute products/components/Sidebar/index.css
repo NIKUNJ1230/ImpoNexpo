@@ -1,0 +1,51 @@
+.menu-accordion .menu-title .accordion-button,
+.accordion-button:focus {
+    background-color: #ffffff;
+    box-shadow: unset;
+    outline: 0;
+    border-top: 1px solid #ddd;
+    color: #1C1C1C;
+    font-size: '16px';
+    font-weight: 600;
+}
+
+.menu-accordion .accordion-item {
+    border: unset;
+}
+
+.menu-accordion .accordion-body {
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+.menu-accordion .sub-menu-list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.menu-accordion .sub-menu-list .show-more {
+    color: #0D6EFD
+}
+
+.main-box {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.main-box input[type="text"] {
+    border-radius: 6px;
+    padding: 6px 6px;
+    width: 80px;
+    border: 2px solid #DEE2E7;
+}
+
+.min_order input[type="text"] {
+    padding: 6px 12px;
+    width: 130px;
+    border: 2px solid #DEE2E7;
+    border-radius: 6px;
+
+}

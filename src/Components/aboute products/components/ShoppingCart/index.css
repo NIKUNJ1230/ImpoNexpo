@@ -1,0 +1,108 @@
+.bg-gray {
+    background-color: #D9D9D9;
+}
+.cart-button {
+    background-color: #FA8232;
+    border: 1px solid #FA8232;
+}
+
+.cart-button.search-btn {
+    border-radius: 0 10px 10px 0;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.search-bar-tab {
+    border: 1px solid #DFE4ED;
+    padding: 12px 6px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.search-bar-tab .fs-small {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.payment-option .form-check-input:checked {
+    background-color: #FA8232;
+    border-color: #FA8232;
+}
+
+.payment-option .form-check-input:checked:hover, .form-check-input:checked:active, .form-check-input:checked:focus {
+  box-shadow: 0 0 0 0.25rem #fa82324f;
+}
+
+.payment-option-header {
+    border: 1px solid #DFE4ED;
+    border-radius: 6px 6px 0 0;
+    padding: 20px;
+}
+
+.payment-option-box {
+    border: 1px solid #DFE4ED;
+    border-radius: 0 0 6px 6px;
+    padding: 20px;
+}
+
+.payment-option-hr {
+    width: 103.8%;
+    margin-left: -20px;
+    border-color: #DFE4ED;
+    opacity: 1;
+}
+.payment-option {
+    border-right: 1px solid #E4E7E9;
+}
+
+.product-desc {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 200px);
+}
+
+@media (max-width: 1439px) {
+    .option-title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1311px) {
+    .payment-option {
+        padding: 0 5px;
+    }
+    .option-title {
+        font-size: 12px;
+    }
+}
+
+.payment-complete-title {
+    border-bottom: 4px solid #1170b7;
+    padding-bottom: 5px;
+}
+
+.service-select-lists .select__control {
+    padding: 6px;
+}
+
+.order-success-box {
+    width: max-content;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+}

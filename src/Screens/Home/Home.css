@@ -1,0 +1,125 @@
+.procard-demon-main {
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+.procard-header-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.procard-header-1 {
+    display: flex;
+}
+
+img.procard-img-info-img {
+    width: 100%;
+    padding: 10px;
+}
+
+.procard-btns-info-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.procard-ing-line-main {
+    text-align: center;
+}
+
+p.procard-header-1-logo-text-p1 {
+    font-size: 9px;
+    font-weight: 600;
+    color: #000;
+}
+
+p.procard-header-1-logo-text-p2 {
+    font-size: 8px;
+    font-weight: 600;
+    color: #000;
+}
+
+img.procard-header-loaction-img {
+    width: 50%;
+}
+
+p.procard-header-loaction-p {
+    font-size: 8px;
+    font-weight: 600;
+    color: #000;
+}
+
+.procard-header-loaction-main {
+    text-align: center;
+}
+
+/* img.procard-header-follow-img {
+    width: 50%;
+} */
+
+p.procard-header-follow-p {
+    font-size: 8px;
+    font-weight: 800;
+    color: #4E4E4E;
+}
+
+p.procard-ing-line-p {
+    font-size: 8px;
+    font-weight: 400;
+    color: #1D5EC9;
+}
+
+p.procard-text-1-p {
+    font-size: 10px;
+    font-weight: 900;
+    color: #5C5C5C;
+}
+
+p.procard-text-2-p {
+    font-size: 10px;
+    font-weight: 700;
+    color: #00BAF2;
+}
+
+p.procard-text-3-p {
+    font-size: 10px;
+    font-weight: 300;
+    color: #5C5C5C;
+}
+
+p.procard-text-4-price-p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #424242;
+}
+
+p.procard-minorder-text-4-p {
+    font-size: 8px;
+    font-weight: 500;
+    color: #4E4E4E;
+}
+
+.procard-text-4-main-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button.procard-bottum-btn-1 {
+    background-color: #fff;
+    color: #1D5DC7;
+    border: 1px solid #1D5DC7;
+}
+
+button.procard-bottum-btn-1,
+button.procard-bottum-btn-2,
+button.procard-bottum-btn-3 {
+    background-color: #fff;
+    color: #1D5DC7;
+    font-size: 9px;
+    border: 1px solid #1D5DC7;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+}

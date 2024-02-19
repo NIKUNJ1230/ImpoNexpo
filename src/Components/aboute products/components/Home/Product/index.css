@@ -1,0 +1,197 @@
+.product-card {
+    border: 1px solid #D9D9D9;
+    box-shadow: 1px 1px 11px 1px #D9D9D9;
+    border-radius: 12px;
+}
+
+.user-name-handle .user-name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #000000;
+}
+
+.user-name-handle .user-handle {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #000000;
+}
+
+.user-county div {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #000000;
+}
+
+.user-follow {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #1D5DC7;
+}
+
+.user-follow-count {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #4E4E4E;
+}
+
+.product-tag {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 8px;
+    border-radius: 40px;
+    gap: 4px;
+    background-color: #EF233C;
+    color: #ffffff;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.product-tag .dot {
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.product-hast-tag {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #FF8430;
+}
+
+.product-order {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #4E4E4E
+}
+
+.order-group-chat {
+    border: 1px solid #1D5DC7;
+    padding: 2px 6px;
+    border-radius: 6px;
+    min-width: 65px;
+}
+
+.pagination {
+ justify-content: center;
+}
+.pagination .page-item .page-link{
+    border-radius: 50px;
+    border:2px solid #A2A6B0;
+    margin: 0 5px;
+    color: #A2A6B0;
+    padding: 8px 16px;
+}
+
+.pagination .page-item.ellipsis .page-link {
+    border-color: #ffffff;
+}
+.pagination .page-item.active .page-link{
+    background-color: #F5F7FF;
+    color: #000000;
+    border-color: #F5F7FF;
+}
+
+.product-rating {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #FF9017;
+    margin-left: 5px;
+}
+
+.list-product-order {
+    display: flex;
+    align-items: center;
+    color: #8B96A5;
+}
+
+.list-product-order .dot {
+    width: 9px;
+    height: 9px;
+    background-color: #DEE2E7;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.list-user-follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-user-handle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.list-view-card {
+    border: 1px solid #DEE2E7;
+    box-shadow: 1px 1px 11px 1px #DEE2E7;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.list-product-user-part {
+    padding-left: 15px;
+    border-left: 1px solid #ACACAF;
+}
+
+.list-product-user-part .user-name-handle .user-name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.list-product-user-part .user-name-handle .user-handle {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.list-view-card .content-css {
+    font-size: 12px;
+}
+
+.list-view-card .more-description {
+    font-size: 12px;
+}

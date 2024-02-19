@@ -14,6 +14,8 @@ import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import MarkUnreadChatAltRoundedIcon from "@mui/icons-material/MarkUnreadChatAltRounded";
+import { RWebShare } from "react-web-share";
+import ProductShare from "./Shareproduct";
 
 
 // function showButtons() {
@@ -86,7 +88,9 @@ const Card_live = () => {
         <div className="card_live__component_statitem">
           <img src={Share} alt="" className="card_live__component_statitemicon" />
           {/* <FavoriteIcon className="card_live__component_statitemicon" /> */}
-          <div className="card_live__component_statitemtext">34</div>
+          {/* <div className="card_live__component_statitemtext">34</div> */}
+          <ProductShare />
+
         </div>
         <div className="card_live__component_statitem">
           <img src={Download} alt="" className="card_live__component_statitemicon" />
@@ -115,7 +119,7 @@ const Card_live = () => {
         <div className="card_live__component_priceleft">$4.45- $6.5</div>
         <div className="card_live__component_priceright">Min orders: 20 Units</div>
       </div>
-     
+
     </div>
   );
 };
