@@ -15,6 +15,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import MarkUnreadChatAltRoundedIcon from "@mui/icons-material/MarkUnreadChatAltRounded";
 import AbouteProduct from "../../../routes";
+import ProductHome from "../../aboute products/components/Home";
 const Card1 = () => {
   const [playing, setPlaying] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -139,8 +140,7 @@ const Card1 = () => {
       </div>
       )}
       <div className="card1__components_footer">
-        <Link to="/AbouteProduct" >
-          {/* <AbouteProduct /> */}
+        <Link to="/ProductHome" >
         <div className="card1__components_fbtn">
           <ShoppingCartIcon className="card1__components_fbtnicn" />
           Order Now

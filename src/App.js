@@ -20,7 +20,14 @@ import Search_page from "./Screens/Search_page/Search_page";
 import More_channel from "./Screens/More_channel/More_channel";
 import Deals_page from "./Screens/Deals_page/Deals_page";
 import Categories_page from "./Screens/Categories_page/Categories_page";
-
+import ProductHome from "./Components/aboute products/components/Home";
+import Layout from "./Components/aboute products/components/Layout";
+import ProductDetails from "./Components/aboute products/components/ProductDetails";
+import ShoppingCart from "./Components/aboute products/components/ShoppingCart";
+import AddedServices from "./Components/aboute products/components/ShoppingCart/AddedServices";
+import Payment from "./Components/aboute products/components/ShoppingCart/Payment";
+import QuoteResult from "./Components/aboute products/components/QuoteResult";
+import OrderSuccess from "./Components/aboute products/components/ShoppingCart/OrderSuccess";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -88,6 +95,13 @@ function App() {
             }
           />
           <Route exact path="/Chat" element={<Chats />}></Route>
+          <Route path="/ProductHome" exact element={<Layout isShowSidebar><ProductHome /></Layout>} />
+          <Route path="/product-details/:id" exact element={<Layout><ProductDetails /></Layout>} />
+          <Route path="/cart" exact element={<Layout><ShoppingCart /></Layout>} />
+          <Route path="/added-services" exact element={<Layout><AddedServices /></Layout>} />
+          <Route path="/payment" exact element={<Layout><Payment /></Layout>} />
+          <Route path="/order-success" exact element={<Layout><OrderSuccess /></Layout>} />
+          <Route path="/quote-result" exact element={<QuoteResult />} />
         </Routes>
       </BrowserRouter>
     </div>

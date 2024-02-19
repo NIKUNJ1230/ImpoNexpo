@@ -23,10 +23,11 @@ import Example from "../share";
 import ProductShare from "../../Components/Cards/Card_live/Shareproduct";
 import ProcardDemo from "../../Components/Procard-extra/Procard-demo";
 import AbouteProduct from "../../routes";
+import ProductHome from "../../Components/aboute products/components/Home";
 const Home = () => {
   return (
     <div className="home__screen">
-      {/* <Topbar />
+       <Topbar />
       <Navbar />
       <Hero />
       <Trending />
@@ -42,9 +43,10 @@ const Home = () => {
       <Warehouse />
       <Footer />
       <UserProductCard />
-      <ProductShare />        */}
-      {/* <ProcardDemo /> */}
-      <AbouteProduct />
+      <ProductShare />
+      <ProcardDemo />
+    {/* <ProductHome /> */}
+      {/* <AbouteProduct /> */}
     </div>
   );
 };
