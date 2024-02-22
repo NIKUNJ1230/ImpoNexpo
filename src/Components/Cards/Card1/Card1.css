@@ -1,23 +1,21 @@
 .card1__component_wrap {
   width: 95%;
   max-width: 100%;
-  height: auto;
+  height: 520px;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 15px;
+  position: relative;
 }
-
 .card1__component_header {
   display: flex;
   justify-content: space-between;
 }
-
 .card1__component_hdrleft {
   display: flex;
   text-decoration: none;
   color: black;
 }
-
 .card1__component_hlimgwrap {
   width: 30px;
   height: 30px;
@@ -28,17 +26,14 @@
   cursor: pointer;
   overflow: hidden;
 }
-
 .card1__component_hlimg {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .card1__component_hlcontent {
   padding-left: 5px;
 }
-
 .card1__component_hlcname {
   font-size: 11px;
   font-weight: 600;
@@ -48,7 +43,6 @@
   align-items: center;
   padding-top: 3px;
 }
-
 .card1__component_hlchandle {
   font-size: 10px;
   font-weight: 600;
@@ -56,7 +50,6 @@
   letter-spacing: 0em;
   margin-top: 2px;
 }
-
 .card1__component_hrfollowbtn {
   font-size: 14px;
   font-weight: 800;
@@ -67,12 +60,10 @@
   display: flex;
   align-items: center;
 }
-
 .card1__component_hrfollowbtnicn {
   font-size: 14px !important;
   margin-right: 2px;
 }
-
 .card1__component_hrfollowcount {
   font-size: 9px;
   font-weight: 800;
@@ -82,12 +73,10 @@
   margin-top: 3px;
   text-align: start;
 }
-
 .card1__component_hdrcenter {
   flex: 1;
   height: 100%;
 }
-
 .card1__component_media {
   width: 100%;
   height: 250px;
@@ -98,30 +87,25 @@
   max-height: fit-content;
   margin: 5px 0;
 }
-
 .play-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  z-index: 1;
-  /* Ensure it's above the player */
+  z-index: 1; /* Ensure it's above the player */
 }
-
 .card1__component_stats {
   display: flex;
   justify-content: space-between;
   padding: 0 5px;
 }
-
 .card1__component_statitem {
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .card1__component_statitemicon {
   color: rgba(29, 94, 201, 1);
   cursor: pointer;
@@ -130,13 +114,11 @@
   font-size: 20px !important;
   object-fit: contain;
 }
-
 .card1__component_statitemtext {
   color: rgba(29, 94, 201, 1);
   font-size: 11px;
   padding-top: 2px;
 }
-
 .card1__component_title {
   font-size: 14px;
   font-weight: 900;
@@ -146,7 +128,6 @@
   margin: 8px 0 3px 0;
   display: inline-block;
 }
-
 .card1__component_tags {
   display: flex;
   align-items: center;
@@ -156,11 +137,9 @@
   letter-spacing: 0em;
   color: rgba(0, 186, 242, 1);
 }
-
 .card1__component_tag {
   margin: 5px 5px 5px 0;
 }
-
 .card1__component_desc {
   padding-top: 5px;
   font-size: 13px;
@@ -170,7 +149,6 @@
   text-align: left;
   color: rgba(92, 92, 92, 1);
 }
-
 .card1__component_descreadmore {
   font-size: 13px;
   font-weight: 700;
@@ -180,14 +158,12 @@
   color: rgba(29, 93, 199, 1);
   padding-left: 5px;
 }
-
 .card1__component_pricesec {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 }
-
 .card1__component_priceleft {
   font-size: 16px;
   font-weight: 600;
@@ -195,7 +171,6 @@
   letter-spacing: 0em;
   color: rgba(66, 66, 66, 1);
 }
-
 .card1__component_priceright {
   font-size: 12px;
   font-weight: 500;
@@ -203,7 +178,6 @@
   letter-spacing: 0em;
   color: rgba(78, 78, 78, 1);
 }
-
 .card1__components_footer {
   width: 100%;
   display: flex;
@@ -211,7 +185,6 @@
   align-items: center;
   padding: 5px 0;
 }
-
 .card1__components_fbtn {
   /* background: linear-gradient(80deg, #1d5ec9 0%, #265c81 100%); */
   color: #1D5DC7;
@@ -222,28 +195,27 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  position: relative;
 }
-
 .card1__components_fbtnicn {
   padding-right: 4px;
   font-size: 14px !important;
 }
 
-.card1__components_gbtn {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 15px 0;
+.card1__components_gbtn{
   position: absolute;
-  bottom: 70px;
-
+  bottom: 13%;
 }
-
-.card1__components_gbtn a {
+.card1__components_gbtn a{
   background-color: #1D5DC7;
   color: white;
-  font-size: 10px;
+  font-size: 14px;
   padding: 5px 15px;
   border-radius: 10px;
-  margin: 0 3px;
+  margin: 0 15px;
+}
+.card1__component_wrap .comment-input {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%,0);
 }

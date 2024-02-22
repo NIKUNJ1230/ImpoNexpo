@@ -3,6 +3,7 @@ import "./Expoters.css"
 import crown from "../../../../assets/images/crownblack.svg";
 import expoterlogo from "../../../../assets/images/Expoterlogo.svg"
 import Single_exporter from './Single_exporter';
+import { Link } from 'react-router-dom';
 
 function Expoters() {
     return (
@@ -18,16 +19,18 @@ function Expoters() {
             </div>
             <div className='main-expoters'>
 
-            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
-            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
-            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
-            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
-            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
-            <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"}/>
+                <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"} />
+                <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"} />
+                <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"} />
+                <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"} />
+                <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"} />
+                <Single_exporter src={expoterlogo} text={"TCL Incorporated"} tag={"@tlcincorporated"} />
             </div>
-            <div className='expoters-button'>
-                <button className='expo-seeall-btn'>See All</button>
-            </div>
+            <Link to="/More_exporter" className='expoters-button'>
+                <div >
+                    <button className='expo-seeall-btn'>See All</button>
+                </div>
+            </Link>
         </div>
     )
 }

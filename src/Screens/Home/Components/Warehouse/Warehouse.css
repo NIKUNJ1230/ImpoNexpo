@@ -55,10 +55,10 @@
 
 .view-more {
     position: absolute;
-    top: 10%;
+    top: 0%;
     right: -40px;
     box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
-    padding: 8px;
+    padding: 15px 8px;
 }
 
 .view-more a {

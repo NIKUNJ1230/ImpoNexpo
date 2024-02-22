@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 function Organization() {
   return (
     <section>
-      <div className="container">
+      <div className="container-fluid ">
         <div className="organization-title">
           <h2>Trusted and Backed by leading organization</h2>
         </div>

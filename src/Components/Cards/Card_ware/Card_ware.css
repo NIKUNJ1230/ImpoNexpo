@@ -2,21 +2,25 @@
   /* width: 340px;
   max-width: 100%;
   height: 528px; */
-  height: 528px;
+  height: 545px;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 15px;
-  margin: 15px;
+  margin: 15px 5px;
+  position: relative;
 }
+
 .card_ware__component_header {
   display: flex;
   justify-content: space-between;
 }
+
 .card_ware__component_hdrleft {
   display: flex;
   text-decoration: none;
   color: black;
 }
+
 .card_ware__component_hlimgwrap {
   width: 30px;
   height: 30px;
@@ -27,14 +31,17 @@
   cursor: pointer;
   overflow: hidden;
 }
+
 .card_ware__component_hlimg {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .card_ware__component_hlcontent {
   padding-left: 5px;
 }
+
 .card_ware__component_hlcname {
   font-size: 11px;
   font-weight: 600;
@@ -44,6 +51,7 @@
   align-items: center;
   padding-top: 3px;
 }
+
 .card_ware__component_hlchandle {
   font-size: 10px;
   font-weight: 600;
@@ -51,6 +59,7 @@
   letter-spacing: 0em;
   margin-top: 2px;
 }
+
 .card_ware__component_hrfollowbtn {
   font-size: 14px;
   font-weight: 800;
@@ -61,10 +70,12 @@
   display: flex;
   align-items: center;
 }
+
 .card_ware__component_hrfollowbtnicn {
   font-size: 14px !important;
   margin-right: 2px;
 }
+
 .card_ware__component_hrfollowcount {
   font-size: 9px;
   font-weight: 800;
@@ -74,10 +85,12 @@
   margin-top: 3px;
   text-align: start;
 }
+
 .card_ware__component_hdrcenter {
   flex: 1;
   height: 100%;
 }
+
 .card_ware__component_media {
   width: 100%;
   height: 250px;
@@ -87,7 +100,8 @@
   max-height: fit-content;
   margin: 5px 0;
 }
-.card_ware__component_media img{
+
+.card_ware__component_media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -96,14 +110,17 @@
 .card_ware__component_stats {
   display: flex;
   justify-content: space-between;
-  padding: 0 5px;
+  padding: 5px;
+  background-color: #D9D9D9;
 }
+
 .card_ware__component_statitem {
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .card_ware__component_statitemicon {
   color: rgba(29, 94, 201, 1);
   cursor: pointer;
@@ -112,11 +129,13 @@
   font-size: 20px !important;
   object-fit: contain;
 }
+
 .card_ware__component_statitemtext {
   color: rgba(29, 94, 201, 1);
   font-size: 11px;
   padding-top: 2px;
 }
+
 .card_ware__component_title {
   font-size: 14px;
   font-weight: 900;
@@ -126,6 +145,7 @@
   margin: 8px 0 3px 0;
   display: inline-block;
 }
+
 .card_ware__component_tags {
   display: flex;
   align-items: center;
@@ -135,9 +155,11 @@
   letter-spacing: 0em;
   color: rgba(0, 186, 242, 1);
 }
+
 .card_ware__component_tag {
   margin: 5px 5px 5px 0;
 }
+
 .card_ware__component_desc {
   padding-top: 5px;
   font-size: 13px;
@@ -147,6 +169,7 @@
   text-align: left;
   color: rgba(92, 92, 92, 1);
 }
+
 .card_ware__component_descreadmore {
   font-size: 13px;
   font-weight: 700;
@@ -156,12 +179,14 @@
   color: rgba(29, 93, 199, 1);
   padding-left: 5px;
 }
+
 .card_ware__component_pricesec {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 }
+
 .card_ware__component_priceleft {
   font-size: 16px;
   font-weight: 600;
@@ -169,6 +194,7 @@
   letter-spacing: 0em;
   color: rgba(66, 66, 66, 1);
 }
+
 .card_ware__component_priceright {
   font-size: 12px;
   font-weight: 500;
@@ -176,6 +202,7 @@
   letter-spacing: 0em;
   color: rgba(78, 78, 78, 1);
 }
+
 .card_ware__components_footer {
   width: 100%;
   display: flex;
@@ -183,6 +210,7 @@
   align-items: center;
   padding: 5px 0;
 }
+
 .card_ware__components_fbtn {
   /* background: linear-gradient(80deg, #1d5ec9 0%, #265c81 100%); */
   color: #1D5DC7;
@@ -194,7 +222,28 @@
   display: flex;
   align-items: center;
 }
+
 .card_ware__components_fbtnicn {
   padding-right: 4px;
   font-size: 14px !important;
+}
+
+.card_ware__component_wrap .card__components_gbtn {
+  left: 10%;
+  bottom: 10%;
+}
+
+.card_ware__component_wrap .card__components_gbtn a {
+  font-size: 12px;
+}
+
+.card_ware__component_wrap .comment-input {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+
+}
+.card_ware__component_wrap .comment-input input{
+  outline: none;
+  font-size: 12px;
 }

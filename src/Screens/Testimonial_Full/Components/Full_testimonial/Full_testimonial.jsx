@@ -6,7 +6,7 @@ import Full_right_testimonial from './Full_right_testimonial'
 function Full_testimonial() {
     return (
         <section>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="full-testimonial">
                     <div className="row">
                         <Full_left_testimonial text={"With Neat, they can just walk in, tap a button, and do their job without the stress of having to solve a technical issue."}

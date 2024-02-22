@@ -28,24 +28,24 @@
     content: '';
     position: absolute;
     top: -10%;
-    left: -13%;
-    width: 150px;
-    height: 150px;
-    background-color: transparent;
+    left: -10%;
+    width: 250px;
+    height: 250px;
+    background-color: white;
     border-radius: 50%;
-    border: 75px solid #E9B9D9;
+    border: 60px solid #E9B9D9;
     z-index: -1;
 }
 .procat-main::after {
     content: '';
     position: absolute;
     bottom: -10%;
-    right: -13%;
-    width: 150px;
-    height: 150px;
+    right: -10%;
+    width: 250px;
+    height: 250px;
     background-color: transparent;
     border-radius: 50%;
-    border: 75px solid #E9B9D9;
+    border: 60px solid #E9B9D9;
     z-index: -1;
 }
 
@@ -190,7 +190,7 @@
     border-radius: 30px;
     box-shadow: 0 0 20px 2px rgb(228, 228, 228);
     position: relative;
-    top: 25%;
+    top: 15%;
     background-color: white;
     cursor: pointer;
 }
@@ -213,4 +213,17 @@
     align-items: center;
     color: white;
     background: rgba(29, 93, 199, 1);
+}
+.explore-more-cat{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.explore-more-cat a{
+    background-color: #1D5DC7;
+    color: white;
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
 }

@@ -40,7 +40,7 @@ const Navbar = () => {
             type="button"
             className="btn p-0 "
             data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
+            data-bs-target="#signin"
           >
             Sign Up/
           </button>
@@ -49,7 +49,7 @@ const Navbar = () => {
             type="button"
             className="btn p-0"
             data-bs-toggle="modal"
-            data-bs-target="#signin"
+            data-bs-target="#staticBackdrop"
           >
             Sign In
           </button>

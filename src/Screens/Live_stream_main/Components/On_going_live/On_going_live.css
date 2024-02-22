@@ -1,0 +1,55 @@
+.on-going-title {
+    padding: 0 5%;
+}
+
+.on-going-menu ul {
+    display: flex;
+    margin-top: 30px;
+    background-color: #00BAF2;
+    padding: 20px 0;
+}
+
+.on-going-menu ul li a {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 0 40px;
+}
+
+.show-more-live {
+    text-align: center;
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+
+.show-more-live a {
+    color: white;
+    font-size: 30px;
+    background-color: #1D5DC7;
+    padding: 10px 100px 10px 30px;
+    font-weight: 500;
+    border-radius: 40px;
+    position: relative;
+}
+
+.show-more-live span svg {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(90deg);
+
+}
+
+.show-more-live span {
+    top: 50%;
+    right: 0;
+    position: absolute;
+    background-color: #1D5DC7;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    transform: translate(0, -50%);
+    border: 5px solid white;
+}

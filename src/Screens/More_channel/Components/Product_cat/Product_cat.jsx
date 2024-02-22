@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function Product_cat() {
     return (
         <div className='pro-cat-section'>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="home__trendingprods_heading">
                     <img src={Star} alt="" className="home__trendingprods_blackstar" />
                     Products Categories on

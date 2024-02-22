@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "./Trending.css";
 import Crown from "../../../../assets/images/headingcrown.png";
@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -31,7 +32,31 @@ function PrevArrow(props) {
   );
 }
 
-const Trending = () => {
+const Trending = ({ title1, title2, text }) => {
+
+  const [products, setProducts] = useState([])
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/Trending/Products', {
+        method: "GET",
+      });
+      if (response.status === 200 || response.ok) {
+        const responseData = await response.json();
+        setProducts(responseData.Data)
+      }
+      else {
+        toast.error(response?.message || "data not found. Please try again.");
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      toast.error("error fetching data. Please try again.");
+    }
+  };
+  useEffect(() => {
+    fetchData();
+    // recentProducts()
+  }, [])
   // Settings for the slider
   const settings = {
     dots: false, // Show dot indicators
@@ -76,75 +101,50 @@ const Trending = () => {
       <div className="home__trendingprods_heading">
         <img src={Crown} alt="" className="home__trendingprods_hcrown" />
         <img src={Star} alt="" className="home__trendingprods_hstar" />
-        Trending Products
+
+        {title1}
         <span className="home__trendingprods_hdinghighlight">
-          on ImpoNexpo Channel
+          {title2}
         </span>
       </div>
       <div className="home__trendingprods_subheading">
-        Explore great Products from great Suppliers
+        {text}
       </div>
-      <Slider {...settings} className="home__trendingprods_cards">
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-      </Slider>
-      <Slider {...settings} className="home__trendingprods_cards">
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-        <div className="home__trendingprods_card">
-          <Card1 />
-        </div>
-      </Slider>
+
+      <div className="home__trendingprods_cards">
+
+        {
+          products.length > 0 ? (
+            products.slice(0, 8).map(product => (
+              <div className="home__trendingprods_card">
+                <Card1
+                  ProductId={product._id}
+                  ProductName={product.ProductName}
+                  ProductDescription={product.ProductDescription}
+
+                  Like={product.Like}
+                  Comment={product.Comment}
+                  Share={product.Share}
+                  Saved={product.Saved}
+                  StartPrice={product.StartPrice}
+                  EndPrice={product.EndPrice}
+                  MinOrder={product.MinOrder}
+                  HashTags={product.HashTags}
+
+                />
+              </div>
+            ))) : (null)
+        }
+
+
+      </div>
       <div className="home__trendprods_sourcemorebtn">
         <div className="home__trendprods_sourcemorebtntxt">
-          Source More Channels
+          Source More Now
         </div>
-        <Link to="/More_channel">
-          <div className="home__trendprods_sourcemorebtniconwrap">
-            <DownIcon className="home__trendprods_sourcemorebtnicon" />
-          </div>
-        </Link>
+        <div className="home__trendprods_sourcemorebtniconwrap">
+          <Link to="/more_channel"> <DownIcon className="home__trendprods_sourcemorebtnicon text-white" /></Link>
+        </div>
       </div>
     </div>
   );

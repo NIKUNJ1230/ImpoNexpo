@@ -3,6 +3,7 @@
   padding: 5px;
   margin: 5px;
   height: 400px;
+  position: relative;
 }
 
 .card_live__component_header {
@@ -114,7 +115,8 @@
 .card_live__component_stats {
   display: flex;
   justify-content: space-between;
-  padding: 0 5px;
+  padding: 5px;
+  background-color: #D9D9D9;
 }
 
 .card_live__component_statitem {
@@ -229,4 +231,17 @@
 .card_live__components_fbtnicn {
   padding-right: 4px;
   font-size: 14px !important;
+}
+
+.card_live__component_wrap .comment-input {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+
+}
+
+.card_live__component_wrap .comment-input input {
+  outline: none;
+  font-size: 12px;
+  padding: 0 5px;
 }

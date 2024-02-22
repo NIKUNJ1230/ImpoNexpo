@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import shoes from "../../../assets/images/shoes.svg";
 import { ReactComponent as Play } from "../../../assets/icons/play.svg";
-import Comment from "../../../assets/icons/comment.svg";
-import Share from "../../../assets/icons/share.svg";
+import comment from "../../../assets/icons/comment.svg";
+import share from "../../../assets/icons/share.svg";
 import Download from "../../../assets/icons/download.svg";
 import ReactPlayer from "react-player";
 import Flag from "react-world-flags";
@@ -16,6 +16,7 @@ import Diversity3Icon from "@mui/icons-material/Diversity3";
 import MarkUnreadChatAltRoundedIcon from "@mui/icons-material/MarkUnreadChatAltRounded";
 import { RWebShare } from "react-web-share";
 import ProductShare from "./Shareproduct";
+import { toast } from "react-toastify";
 
 
 // function showButtons() {
@@ -26,15 +27,98 @@ import ProductShare from "./Shareproduct";
 //   alert('You selected ' + option);
 //   $('#buttonModal').modal('hide');
 // }
-const Card_live = () => {
+const Card_live = ({ ProductId, ProductName, ProductDescription, ProductImage, Like, Comment, Share, Saved, StartPrice, EndPrice, MinOrder, HashTags }) => {
   const [playing, setPlaying] = useState(false);
-
+  const [likeCount, setLikeCount] = useState(Like);
+  const [commentCount, setCommentCount] = useState(Comment);
+  const [savedCount, setSavedCount] = useState(Saved)
+  const [visibleInput, setVisibleInput] = useState(false);
+  const [commentValue, setCommentValue] = useState()
   const togglePlayPause = () => {
     setPlaying(!playing); // Toggle the playing state
   };
   const handleVideoEnd = () => {
     setPlaying(false); // Reset playing to false when the video ends
   };
+
+  const toggleComment = () => {
+    setVisibleInput(!visibleInput)
+  }
+  const LikeProduct = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/Like/Product/${ProductId}/65d08c6227dbbda864619b31`, {
+        method: 'GET',
+      })
+      if (response.statusCode === 200 || response.ok) {
+        const result = await response.json()
+        console.log(result)
+        if (result.message === "Product liked successfully") {
+          setLikeCount(likeCount + 1)
+
+        }
+        else {
+          if (result.message === "Like removed successfully") {
+            setLikeCount(likeCount - 1)
+          }
+        }
+      }
+      else {
+        toast.error(response?.message || "Something Wrong")
+      }
+    }
+    catch (error) {
+      // console.error('Error fetching data:', error);
+      toast.error("error somethig went wrong . Please try again.");
+    }
+  }
+
+  const SaveProduct = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/Save/Product/65d08c6227dbbda864619b31/${ProductId}`)
+      if (response.ok || response.status === 200) {
+        const responseData = await response.json()
+        console.log(responseData)
+        if (responseData.message === "Saved!") {
+          setSavedCount(savedCount + 1)
+        }
+        else {
+          if (responseData.message === "Unsaved!") {
+            setSavedCount(savedCount - 1)
+          }
+        }
+      }
+      else {
+        toast.error(response?.message)
+      }
+    }
+    catch (error) {
+      console.log(error)
+    }
+  }
+
+  const postComment = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/Comment/Product/${ProductId}/65d08c6227dbbda864619b31`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ Message: commentValue })
+      })
+      if (response.statusCode === 200 || response.ok) {
+        const responseData = await response.json();
+        setCommentCount(commentCount + 1)
+        setVisibleInput(false)
+        setCommentValue("")
+      }
+      else {
+        toast.error("Something went wrong")
+      }
+    }
+    catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <div className="card_live__component_wrap">
       <div className="card_live__component_header">
@@ -73,29 +157,48 @@ const Card_live = () => {
       <div className="card_live__component_media">
         <img src={shoes} alt="" />
       </div>
-      <div className="card_live__component_stats">
-        <div className="card_live__component_statitem">
+      <div className="card_live__component_stats" >
+        <div className="card_live__component_statitem" onClick={LikeProduct}>
           <FavoriteBorderRoundedIcon className="card_live__component_statitemicon" />
           {/* <FavoriteRoundedIcon className="card_live__component_statitemicon" /> */}
-          <div className="card_live__component_statitemtext">231</div>
+          <div className="card_live__component_statitemtext">{likeCount}</div>
         </div>
-        <div className="card_live__component_statitem">
-          {/* <Comment className="card_live__component_statitemicon" /> */}
-          <img src={Comment} alt="" className="card_live__component_statitemicon" />
-          {/* <FavoriteIcon className="card_live__component_statitemicon" /> */}
-          <div className="card_live__component_statitemtext">450</div>
-        </div>
-        <div className="card_live__component_statitem">
-          <img src={Share} alt="" className="card_live__component_statitemicon" />
-          {/* <FavoriteIcon className="card_live__component_statitemicon" /> */}
-          {/* <div className="card_live__component_statitemtext">34</div> */}
-          <ProductShare />
 
+
+        <div className="card_live__component_statitem" onClick={toggleComment}>
+          {/* <Comment className="card_live__component_statitemicon" /> */}
+          <img src={comment} alt="" className="card_live__component_statitemicon" />
+          {/* <FavoriteIcon className="card_live__component_statitemicon" /> */}
+          <div className="card_live__component_statitemtext">{commentCount}</div>
         </div>
-        <div className="card_live__component_statitem">
+
+
+        {visibleInput && (
+          <div className="comment-input d-flex">
+            <input type="text" name="comment_input" value={commentValue} onChange={(e) => setCommentValue(e.target.value)} autoFocus/>
+            <button onClick={postComment}>Post</button>
+          </div>
+        )}
+
+
+        <RWebShare
+          data={{
+            text: ProductDescription,
+            url: "https://on.natgeo.com/2zHaNup",
+            title: ProductName,
+          }}
+          onClick={() => console.log("shared successfully!")}
+        >
+          <div className="card_live__component_statitem">
+            <img src={share} alt="" className="card_live__component_statitemicon" />
+            {/* <FavoriteIcon className="card_live__component_statitemicon" /> */}
+            <div className="card_live__component_statitemtext">{Share}</div>
+          </div>
+        </RWebShare>
+        <div className="card_live__component_statitem" onClick={SaveProduct}>
           <img src={Download} alt="" className="card_live__component_statitemicon" />
           {/* <FavoriteIcon className="card_live__component_statitemicon" /> */}
-          <div className="card_live__component_statitemtext">500</div>
+          <div className="card_live__component_statitemtext">{savedCount}</div>
         </div>
       </div>
       <Link to="/" className="card_live__component_title">

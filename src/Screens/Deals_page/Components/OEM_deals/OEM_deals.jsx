@@ -16,7 +16,7 @@ import Single_saving from './Single_saving'
 function OEM_deals() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="category-deals-title">
                     <li>OEM/ODM Deals</li>
                 </div>
@@ -31,7 +31,7 @@ function OEM_deals() {
                     </div>
                 </div>
 
-                <div className="container">
+                <div className="container-fluid ">
                     <div className="brands-deals">
                         <div className="brand-deals-title">
                             <h4>The hottest deals from the most popular brands</h4>

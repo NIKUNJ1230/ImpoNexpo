@@ -5,7 +5,7 @@ import Single_trending_deal from '../Trending_Deals/Single_trending_deal'
 function Channel_deals() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="category-deals-title">
                     <li>Deals from Channels</li>
                 </div>

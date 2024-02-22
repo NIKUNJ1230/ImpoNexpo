@@ -1,9 +1,10 @@
 .card__component_wrap {
-  height: 410px;
+  height: 425px;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 15px;
-  margin: 10px;
+  margin: 10px 0;
+  position: relative;
 }
 
 .card__component_header {
@@ -115,7 +116,8 @@
 .card__component_stats {
   display: flex;
   justify-content: space-between;
-  padding: 0 5px;
+  padding: 5px;
+  background-color: #D9D9D9;
 }
 
 .card__component_statitem {
@@ -230,4 +232,46 @@
 .card__components_fbtnicn {
   padding-right: 4px;
   font-size: 14px !important;
+}
+
+.card__components_gbtn {
+  position: absolute;
+  bottom: 13%;
+}
+
+.card__components_gbtn a {
+  background-color: #1D5DC7;
+  color: white;
+  font-size: 8px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.comment-input button {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #00BAF2;
+  color: white;
+  font-weight: 500;
+  border: 2px solid #00BAF2;
+}
+
+.comment-input input {
+  border: 2px solid #00BAF2;
+  padding: 5px;
+  outline: none;
+}
+.comment-input input:focus{
+  box-shadow:0 0 8px 0 #00BAF2;
+}
+
+.card__component_wrap .comment-input {
+  position: absolute;
+  top: 65%;
+}
+
+.card__component_wrap .comment-input input {
+  outline: none;
+  font-size: 10px;
 }

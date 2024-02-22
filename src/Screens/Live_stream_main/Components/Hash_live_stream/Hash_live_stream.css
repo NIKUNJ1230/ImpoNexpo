@@ -1,0 +1,50 @@
+.hash-live-title {
+    text-align: center;
+}
+
+.hash-live-title h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hash-live-menu {
+    background-color: #00BAF2;
+    padding: 15px 0;
+    margin: 20px 0 10px;
+}
+
+.hash-live-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hash-live-menu ul li a {
+    color: black;
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.hash-live-menu ul li a:hover {
+    background-color: #1D5DC7;
+    color: white;
+}
+
+.hash-live-stream {
+    padding:1%;
+}
+.single-live-hash{
+    margin: 10px 3px;
+
+}
+.single-live-hash a{
+    font-size: 25px;
+    width: 100%;
+    padding: 20px;
+    font-weight: 700;
+    border: 2px solid #00BAF2;
+    color: white;
+}

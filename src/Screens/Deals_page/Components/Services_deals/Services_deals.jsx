@@ -4,7 +4,7 @@ import service from "../../../../assets/deals page/services-deals.svg"
 function Services_deals() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="category-deals-title">
                     <li>Free Services Deals</li>
                 </div>

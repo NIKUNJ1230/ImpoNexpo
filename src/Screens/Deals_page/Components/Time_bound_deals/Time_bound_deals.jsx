@@ -7,7 +7,7 @@ import Single_trending_deal from '../Trending_Deals/Single_trending_deal'
 function Time_bound_deals() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="time-bound-title">
                     <h2>time-bound deals</h2>
                 </div>

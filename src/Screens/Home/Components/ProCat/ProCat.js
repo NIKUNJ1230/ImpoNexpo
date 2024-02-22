@@ -11,6 +11,7 @@ import Single_hash from "./single_hash";
 import DownIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import Left_rect_cat from "./Left_rect_cat";
 import Pro_cat_slider from "./Pro_cat_slider";
+import { Link } from "react-router-dom";
 function ProCat() {
   const settings = {
     infinite: true,
@@ -26,7 +27,7 @@ function ProCat() {
         <p>Get an amazing discount on great Products</p>
       </div>
       <div className="container">
-        
+
         <div className="procat-main">
           <div className="procategory">
             <div className="row">
@@ -136,7 +137,7 @@ function ProCat() {
                       Source Now
                     </div>
                     <div className="home__procatprods_sourcemorebtniconwrap">
-                      <DownIcon className="home__procatprods_sourcemorebtnicon" />
+                     <Link to="/category_page"> <DownIcon className="home__procatprods_sourcemorebtnicon text-white" /></Link>
                     </div>
                   </div>
                 </div>
@@ -251,13 +252,18 @@ function ProCat() {
                       Source Now
                     </div>
                     <div className="home__procatprods_sourcemorebtniconwrap">
-                      <DownIcon className="home__procatprods_sourcemorebtnicon" />
+                      <Link to="/category_page"> <DownIcon className="home__procatprods_sourcemorebtnicon text-white" /></Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div className="explore-more-cat">
+            <Link to="/Category_page">What are you looking for.....</Link>
+          </div>
+
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ import Single_clearance from './Single_clearance'
 function Clearance_deals() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="category-deals-title">
                     <li>Deals from Clearance</li>
                 </div>

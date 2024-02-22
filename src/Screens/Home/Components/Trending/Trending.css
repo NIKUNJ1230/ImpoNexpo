@@ -19,6 +19,7 @@
 
 .home__trendingprods_hdinghighlight {
   color: rgba(255, 0, 0, 1);
+  margin-left: 10px;
 }
 
 .home__trendingprods_subheading {
@@ -52,7 +53,7 @@
 .home__trendingprods_section .slick-next {
   border: none !important;
   background-color: #595959 !important;
-  right: 7% !important;
+  right: 3% !important;
 }
 
 .home__trendingprods_section .slick-prev:hover,
@@ -69,14 +70,13 @@
 .home__trendingprods_cards {
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 40px 0;
   flex-wrap: wrap;
 }
 
 .home__trendingprods_card {
-  margin: 10px;
+  flex: 0 0 25%;
 }
 
 .slickcarousal__arrow {

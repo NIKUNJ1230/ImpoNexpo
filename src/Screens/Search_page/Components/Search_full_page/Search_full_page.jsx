@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Search_full_page.css"
 import Single_search_menu from "../Single_search_menu/Single_search_menu"
 import { Link } from 'react-router-dom'
@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Card1 from "../../../../Components/Cards/Card1/Card1";
+import { toast } from 'react-toastify';
 function NextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -29,13 +30,37 @@ function PrevArrow(props) {
 }
 
 function Search_full_page() {
+    const [products, setProducts] = useState([])
+
+    const fetchData = async () => {
+        try {
+            const response = await fetch('http://localhost:3000/Admin/Get/All/Product', {
+                method: "GET",
+            });
+            if (response.status === 200 || response.ok) {
+                const responseData = await response.json();
+                setProducts(responseData.product)
+            }
+            else {
+                toast.error(response?.message || "data not found. Please try again.");
+            }
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            toast.error("error fetching data. Please try again.");
+        }
+    };
+    console.log(products)
+    useEffect(() => {
+        fetchData();
+        // recentProducts()
+    }, [])
     // Settings for the slider
     const settings = {
         dots: false, // Show dot indicators
         infinite: true, // Infinite looping
         speed: 500, // Animation speed
-        slidesToShow: 4, // Number of slides to show at once
-        slidesToScroll: 4, // Number of slides to scroll at once
+        slidesToShow: 2, // Number of slides to show at once
+        slidesToScroll: 2, // Number of slides to scroll at once
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         responsive: [
@@ -81,140 +106,31 @@ function Search_full_page() {
                     </ul>
                 </div>
 
-                <Slider {...settings} className="search__fullprods_cards">
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                </Slider>
+                <div className="search__fullprods_cards">
 
-                <Slider {...settings} className="search__fullprods_cards">
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                </Slider>
+                    {
+                        products.length > 0 ? (
+                            products.slice(0, 8).map(product => (
+                                <div className="search__fullprods_card">
+                                    <Card1
+                                        ProductId={product._id}
+                                        ProductName={product.ProductName}
+                                        ProductDescription={product.ProductDescription}
 
-                <Slider {...settings} className="search__fullprods_cards">
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                </Slider>
+                                        Like={product.Like}
+                                        Comment={product.Comment}
+                                        Share={product.Share}
+                                        Saved={product.Saved}
+                                        StartPrice={product.StartPrice}
+                                        EndPrice={product.EndPrice}
+                                        MinOrder={product.MinOrder}
+                                        HashTags={product.HashTags}
+                                    />
+                                </div>
+                            ))) : (null)
+                    }
 
-                <Slider {...settings} className="search__fullprods_cards">
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                </Slider>
-
-                <Slider {...settings} className="search__fullprods_cards">
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                    <div className="search__fullprods_card">
-                        <Card1 />
-                    </div>
-                </Slider>
+                </div>
 
                 <div className="loading-search">
                     <Link to="/" className="load-more">

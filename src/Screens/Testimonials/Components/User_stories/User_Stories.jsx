@@ -24,7 +24,7 @@ import Single_stories from './Single_stories'
 function User_Stories() {
     return (
         <section>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="user-stories-title">
                     <h2>feature user stories</h2>
                 </div>

@@ -56,7 +56,7 @@ const CountriesDropDown = () => (
     options={countries}
     styles={customStyles}
     formatOptionLabel={formatOptionLabel}
-    // You can also pass other props to customize the dropdown further
+  // You can also pass other props to customize the dropdown further
   />
 );
 

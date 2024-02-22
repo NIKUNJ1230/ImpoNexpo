@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import "./Hero.css";
+import "./Hero.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import offer1 from "../../../../assets/images/offer.svg";
@@ -17,19 +17,47 @@ import list from "../../../../assets/images/list.svg";
 import Single_offer from "./Single_offer";
 import Single_offerCat from "./Single_offerCat";
 import { Link } from "react-router-dom";
- 
 
 function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+  const [category, setCategory] = useState([])
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
   };
+
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
+  const handleCategory = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/Admin/Find/Categories', {
+        method: "GET",
+      })
+      if (response.statusCode === 200 || response.ok) {
+        const responseData = await response.json()
+        setCategory(responseData.Category)
+      }
+      else {
+        console.log(response?.message || "Something went wrong")
+      }
+    }
+    catch (error) {
+      console.log(error);
+    }
+  }
+  console.log("category:::", category)
+  useEffect(() => {
+    handleCategory()
+  }, [])
   return (
     <section className="offer">
-      <div className="container-fluid ">
-        <div className="row p-5">
+      <div className="container">
+        <div className="row">
           <div className="w-60">
             <div className="slider-container">
               <Slider {...settings}>
@@ -43,24 +71,38 @@ function Hero() {
                 <Single_offer img={offer3} />
               </Slider>
               <div className="category">
-                <div className="categoty-title">
+                <Link onClick={toggleVisibility} className="categoty-title">
                   <div className="category-title-img">
                     <img src={list} alt="" />
                   </div>
                   <h3>category</h3>
-                </div>
-                <div className="categoty-list">
+                </Link>
+
+                <div className={`categoty-list ${isVisible ? "visible" : " "}`}>
                   <ul>
-                    <Single_offerCat cat_name={"mens clothes"} />
-                    <Single_offerCat cat_name={"womens clothes"} />
+
+
+                    {category.length > 0 ?
+                      category.map(cat => (
+
+                        <Single_offerCat cat_name={cat.name} />
+
+                      )) : (null)
+
+                    }
+
+                    {/* <Single_offerCat cat_name={"womens clothes"} />
                     <Single_offerCat cat_name={"jewellery"} />
                     <Single_offerCat cat_name={"furnitures"} />
                     <Single_offerCat cat_name={"assecories"} />
                     <Single_offerCat cat_name={"makeup"} />
                     <Single_offerCat cat_name={"cars"} />
-                    <Single_offerCat cat_name={"cycles"} />
+                    <Single_offerCat cat_name={"cycles"} /> */}
+
+
                   </ul>
                 </div>
+
               </div>
             </div>
           </div>
@@ -119,8 +161,7 @@ function Hero() {
                     />
                   </div>
                   <div className="d-flex align-center justify-center">
-                    <Link to="/"></Link>
-                    <button type="submit">Request For Quotation</button>
+                    <Link to="/">Request For Quotation</Link>
                   </div>
                 </form>
               </div>

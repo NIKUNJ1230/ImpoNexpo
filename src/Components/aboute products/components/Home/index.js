@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
     Col,
     Container,
@@ -22,6 +22,9 @@ const ProductHome = () => {
     const handleViewChange = (type) => {
         setViewType(type);
     };
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
 
     return <Container fluid>
         <Row>

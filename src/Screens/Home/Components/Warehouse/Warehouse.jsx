@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Warehouse.css";
 import DownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
-import Card from "../../../../Components/Cards/Card_ware/Card_ware";
+import Card_ware from "../../../../Components/Cards/Card_ware/Card_ware";
 import star_blue from "../../../../assets/images/start_blue.svg";
 import Warehouse_menu from "./Warehouse_menu";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 function Warehouse() {
+  const [products, setProducts] = useState([])
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/Trending/Products', {
+        method: "GET",
+      });
+      if (response.status === 200 || response.ok) {
+        const responseData = await response.json();
+        setProducts(responseData.Data)
+      }
+      else {
+        toast.error(response?.message || "data not found. Please try again.");
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      toast.error("error fetching data. Please try again.");
+    }
+  };
+  useEffect(() => {
+    fetchData();
+    // recentProducts()
+  }, [])
   return (
     <sction>
       <div className="container">
@@ -39,30 +63,31 @@ function Warehouse() {
         </div>
         <div className="warehouse-content">
           <div className="row">
-            <div className="w-4">
-              <Card />
-            </div>
-            <div className="w-4">
-              <Card />
-            </div>
-            <div className="w-4">
-              <Card />
-            </div>
-            <div className="w-4">
-              <Card />
-            </div>
-            <div className="w-4">
-              <Card />
-            </div>
-            <div className="w-4">
-              <Card />
-            </div>
-            <div className="w-4">
-              <Card />
-            </div>
-            <div className="w-4">
-              <Card />
-            </div>
+
+
+            {
+              products.length > 0 ? (
+                products.slice(0, 8).map(product => (
+                  <div className="w-4">
+                    <Card_ware
+                      ProductId={product._id}
+                      ProductName={product.ProductName}
+                      ProductDescription={product.ProductDescription}
+
+                      Like={product.Like}
+                      Comment={product.Comment}
+                      Share={product.Share}
+                      Saved={product.Saved}
+                      StartPrice={product.StartPrice}
+                      EndPrice={product.EndPrice}
+                      MinOrder={product.MinOrder}
+                      HashTags={product.HashTags}
+
+                    />
+                  </div>
+                ))) : (null)
+            }
+
           </div>
           <div className="warehouse-star">
             <img src={star_blue} alt="" />
@@ -73,7 +98,9 @@ function Warehouse() {
               Source More Deals
             </div>
             <div className="home__warehouseprods_sourcemorebtniconwrap">
-              <DownIcon className="home__warehouseprods_sourcemorebtnicon" />
+              <Link to="/deals_page">
+                <DownIcon className="home__warehouseprods_sourcemorebtnicon text-white" />
+              </Link>
             </div>
           </div>
         </div>

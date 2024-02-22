@@ -1,0 +1,108 @@
+.full-live-v-chat {
+    background-color: #F3F3F3;
+    width: 100%;
+    height: 85vh;
+    overflow: auto;
+}
+
+ .single-full-v-chat {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.single-full-v-chat .single-full-v-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+ .single-full-v-chat .single-full-v-profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.single-full-v-chat .single-full-v-name-duration {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+}
+
+ .single-full-v-chat .single-full-v-name {
+    text-transform: capitalize;
+    color: #565959;
+
+}
+
+.single-full-v-chat .single-full-v-duration {
+    list-style: disc;
+    margin-left: 15px;
+    color: #565959;
+    margin-left: 20px;
+}
+
+.single-full-v-chat .single-full-v-comment {
+    display: inline-block;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.single-full-v-chat .single-full-v-comment::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid white;
+    border-right: 8px solid white;
+    border-top: 8px solid transparent;
+    transform: translateY(-50%);
+}
+
+.full-live-v-content {
+    padding: 10px 30px;
+}
+
+ .full-live-v-content p {
+    width: 75%;
+    line-height: 25px;
+}
+
+ .full-live-v-input-comment {
+    padding: 20px;
+    border: 5px solid #1D5DC7;
+    display: flex;
+    align-items: flex-end;
+}
+
+ .full-live-v-input-comment .full-live-input {
+    display: flex;
+    align-items: flex-end;
+}
+ .full-live-v-input-comment .full-live-input input {
+    padding: 10px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.full-live-v-input-comment .full-live-input .full-live-v-input-comment-send {
+    margin-left: 30px;
+}
+
+ .full-live-v-input-comment .full-live-input-btns {
+    margin-top: 20px;
+}
+
+.full-live-v-input-comment .full-live-input-btns a {
+    margin: 0 10px;
+}

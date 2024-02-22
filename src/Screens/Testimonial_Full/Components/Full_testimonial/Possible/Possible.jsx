@@ -14,7 +14,7 @@ function Possible() {
             <div className="row">
                 <div className="w-2">
                     <div className="possible-left">
-                        <div className="container">
+                        <div className="container-fluid ">
                             <div className="possible-left-title">
                                 <h3>Explore what's possible with Zoom</h3>
                             </div>

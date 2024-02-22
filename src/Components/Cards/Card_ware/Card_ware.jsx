@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import shoes from "../../../assets/images/live video.svg";
 import { ReactComponent as Play } from "../../../assets/icons/play.svg";
-import Comment from "../../../assets/icons/comment.svg";
-import Share from "../../../assets/icons/share.svg";
+import comment from "../../../assets/icons/comment.svg";
+import share from "../../../assets/icons/share.svg";
 import Download from "../../../assets/icons/download.svg";
 import ReactPlayer from "react-player";
 import Flag from "react-world-flags";
@@ -14,7 +14,104 @@ import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import MarkUnreadChatAltRoundedIcon from "@mui/icons-material/MarkUnreadChatAltRounded";
-const Card_ware = () => {
+import { toast } from "react-toastify";
+import { RWebShare } from "react-web-share";
+const Card_ware = ({ ProductId, ProductName, ProductDescription, ProductImage, Like, Comment, Share, Saved, StartPrice, EndPrice, MinOrder, HashTags }) => {
+  const [playing, setPlaying] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [likeCount, setLikeCount] = useState(Like);
+  const [commentCount, setCommentCount] = useState(Comment);
+  const [savedCount, setSavedCount] = useState(Saved)
+  const [visibleInput, setVisibleInput] = useState(false);
+  const [commentValue, setCommentValue] = useState()
+  const togglePlayPause = () => {
+    setPlaying(!playing); // Toggle the playing state
+  };
+  const handleVideoEnd = () => {
+    setPlaying(false); // Reset playing to false when the video ends
+  };
+
+  const toggleVisible = () => {
+    setIsVisible(!isVisible)
+  }
+  const toggleComment = () => {
+    setVisibleInput(!visibleInput)
+  }
+  const LikeProduct = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/Like/Product/${ProductId}/65d08c6227dbbda864619b31`, {
+        method: 'GET',
+      })
+      if (response.statusCode === 200 || response.ok) {
+        const result = await response.json()
+        console.log(result)
+        if (result.message === "Product liked successfully") {
+          setLikeCount(likeCount + 1)
+
+        }
+        else {
+          if (result.message === "Like removed successfully") {
+            setLikeCount(likeCount - 1)
+          }
+        }
+      }
+      else {
+        toast.error(response?.message || "Something Wrong")
+      }
+    }
+    catch (error) {
+      // console.error('Error fetching data:', error);
+      toast.error("error somethig went wrong . Please try again.");
+    }
+  }
+
+  const SaveProduct = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/Save/Product/65d08c6227dbbda864619b31/${ProductId}`)
+      if (response.ok || response.status === 200) {
+        const responseData = await response.json()
+        console.log(responseData)
+        if (responseData.message === "Saved!") {
+          setSavedCount(savedCount + 1)
+        }
+        else {
+          if (responseData.message === "Unsaved!") {
+            setSavedCount(savedCount - 1)
+          }
+        }
+      }
+      else {
+        toast.error(response?.message)
+      }
+    }
+    catch (error) {
+      console.log(error)
+    }
+  }
+
+  const postComment = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/Comment/Product/${ProductId}/65d08c6227dbbda864619b31`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ Message: commentValue })
+      })
+      if (response.statusCode === 200 || response.ok) {
+        const responseData = await response.json();
+        setCommentCount(commentCount + 1)
+        setVisibleInput(false)
+        setCommentValue("")
+      }
+      else {
+        toast.error("Something went wrong")
+      }
+    }
+    catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <div className="card_ware__component_wrap">
       <div className="card_ware__component_header">
@@ -56,30 +153,44 @@ const Card_ware = () => {
         <img src={shoes} alt="" />
       </div>
       <div className="card_ware__component_stats">
-        <div className="card_ware__component_statitem">
+        <div className="card_ware__component_statitem" onClick={LikeProduct}>
           <FavoriteBorderRoundedIcon className="card_ware__component_statitemicon" />
           {/* <FavoriteRoundedIcon className="card_ware__component_statitemicon" /> */}
-          <div className="card_ware__component_statitemtext">231</div>
+          <div className="card_ware__component_statitemtext">{likeCount}</div>
         </div>
-        <div className="card_ware__component_statitem">
+        <div className="card_ware__component_statitem" onClick={toggleComment}>
           {/* <Comment className="card_ware__component_statitemicon" /> */}
           <img
-            src={Comment}
+            src={comment}
             alt=""
             className="card_ware__component_statitemicon"
           />
           {/* <FavoriteIcon className="card_ware__component_statitemicon" /> */}
-          <div className="card_ware__component_statitemtext">450</div>
+          <div className="card_ware__component_statitemtext">{commentCount}</div>
         </div>
-        <div className="card_ware__component_statitem">
-          <img
-            src={Share}
-            alt=""
-            className="card_ware__component_statitemicon"
-          />
-          {/* <FavoriteIcon className="card_ware__component_statitemicon" /> */}
-          <div className="card_ware__component_statitemtext">34</div>
-        </div>
+
+        {visibleInput && (
+          <div className="comment-input d-flex">
+            <input type="text" name="comment_input" value={commentValue} onChange={(e) => setCommentValue(e.target.value)} autoFocus/>
+            <button onClick={postComment}>Post</button>
+          </div>
+        )}
+
+
+        <RWebShare
+          data={{
+            text: ProductDescription,
+            url: "https://on.natgeo.com/2zHaNup",
+            title: ProductName,
+          }}
+          onClick={() => console.log("shared successfully!")}
+        >
+          <div className="card_ware__component_statitem">
+            <img src={share} alt="" className="card_ware__component_statitemicon" />
+            {/* <FavoriteIcon className="card_ware__component_statitemicon" /> */}
+            <div className="card_ware__component_statitemtext">{Share}</div>
+          </div>
+        </RWebShare>
         <div className="card_ware__component_statitem">
           <img
             src={Download}
@@ -87,7 +198,7 @@ const Card_ware = () => {
             className="card_ware__component_statitemicon"
           />
           {/* <FavoriteIcon className="card_ware__component_statitemicon" /> */}
-          <div className="card_ware__component_statitemtext">500</div>
+          <div className="card_ware__component_statitemtext">{savedCount}</div>
         </div>
       </div>
       <Link to="/" className="card_ware__component_title">
@@ -114,19 +225,31 @@ const Card_ware = () => {
           Min orders: 20 Units
         </div>
       </div>
+
+
+      {isVisible && (<div className="card__components_gbtn">
+        <Link to="/">Initiate a Group Buy</Link>
+        <Link to="/">Join a Group Buy</Link>
+      </div>
+      )}
+
       <div className="card_ware__components_footer">
-        <div className="card_ware__components_fbtn">
-          <ShoppingCartIcon className="card_ware__components_fbtnicn" />
-          Order Now
-        </div>
-        <div className="card_ware__components_fbtn">
+        <Link to="/productHome">
+          <div className="card_ware__components_fbtn">
+            <ShoppingCartIcon className="card_ware__components_fbtnicn" />
+            Order Now
+          </div>
+        </Link>
+        <div className="card_ware__components_fbtn" onClick={toggleVisible}>
           <Diversity3Icon className="card_ware__components_fbtnicn" />
           Group Import
         </div>
-        <div className="card_ware__components_fbtn">
-          <MarkUnreadChatAltRoundedIcon className="card_ware__components_fbtnicn" />
-          Contact Exporter
-        </div>
+        <Link to="/chat">
+          <div className="card_ware__components_fbtn">
+            <MarkUnreadChatAltRoundedIcon className="card_ware__components_fbtnicn" />
+            Contact Exporter
+          </div>
+        </Link>
       </div>
     </div>
   );

@@ -4,13 +4,13 @@ import Single_metrics from './Single_metrics'
 function Metrics() {
     return (
         <section>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="metrics-title">
                     <h2>success metrics unveiled</h2>
                 </div>
             </div>
             <div className="metrics-content">
-                <div className="container">
+                <div className="container-fluid ">
                     <div className="row align-center">
                         <div className="w-30">
                             <div className="left-content">

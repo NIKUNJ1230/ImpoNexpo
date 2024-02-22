@@ -18,10 +18,10 @@
     content: "";
     position: absolute;
     bottom: 0;
-    right: -17%;
-    width: 150px;
-    height: 150px;
-    border: 75px solid #E9B9D9;
+    right: -15%;
+    width: 250px;
+    height: 250px;
+    border: 60px solid #E9B9D9;
     border-radius: 50%;
 }
 .Personalized-btn{
@@ -34,4 +34,8 @@
     color: black;
     border: 2px solid #40CBF5;
     border-radius: 8px;
+}
+.Personalized-card .card__components_gbtn {
+    left: 20%;
+    bottom: 15%;
 }

@@ -18,7 +18,7 @@ import Single_category_deals from './Single_category_deals'
 function Category_deals() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="category-deals-title">
                     <li>Deals from Categories</li>
                 </div>

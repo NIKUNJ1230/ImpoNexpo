@@ -1,0 +1,63 @@
+.more-live-menu {
+    padding: 30px 0;
+    border-block: 3px solid white;
+    margin-bottom: 100px;
+}
+
+.more-live-menu ul {
+    display: flex;
+}
+
+.more-live-menu ul li {
+    margin: 0 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.more-live-menu ul li a {
+    text-transform: capitalize;
+    color: white;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.more-live-menu ul li.more-filter a {
+    display: flex;
+    align-items: center;
+}
+
+.more-live-menu ul li.more-filter a svg {
+    margin-left: 20px;
+}
+
+.more-live-menu ul li.more-filter {
+    margin-left: auto;
+}
+
+.more-live-time,
+.more-live-supplier {
+    position: relative;
+}
+
+.more-live-time:hover .more-live-time-menu,
+.more-live-supplier:hover .more-live-supplier-menu {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.more-live-time-menu {}
+
+.more-live-time-menu,
+.more-live-supplier-menu {
+    position: absolute;
+    width: 700px;
+    top: 100px;
+    left: 0;
+    transition: all 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+
+}

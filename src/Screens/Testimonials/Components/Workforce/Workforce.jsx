@@ -5,7 +5,7 @@ function Workforce() {
     return (
         <section>
             <div className="workforce">
-                <div className="container">
+                <div className="container-fluid ">
                     <div className="row">
                         <div className="w-70">
                             <div className="left-workforce">

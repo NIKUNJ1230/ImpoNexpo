@@ -1,0 +1,16 @@
+.upcoming-live-title{
+    text-align: center;
+    margin: 100px 0 50px;
+}
+.upcoming-live-title h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+.view-all-live{
+    text-align: center;
+}
+.view-all-live a{
+    font-size: 36px;
+    font-weight: 700;
+    color: #1D5DC7;
+}

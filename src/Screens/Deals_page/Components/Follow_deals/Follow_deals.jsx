@@ -8,7 +8,7 @@ import Single_follow from './Single_follow'
 function Follow_deals() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="follow-deals-title">
                     <h2>Deals from Accounts you follow</h2>
                 </div>

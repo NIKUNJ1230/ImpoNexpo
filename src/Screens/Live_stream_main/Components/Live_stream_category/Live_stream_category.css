@@ -1,0 +1,27 @@
+.w-8 {
+    width: 12.5%;
+}
+
+.live-stream-category-title {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.live-stream-category-title h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.live-stream-categories {
+    margin: 80px 0;
+}
+
+.single-live-category {
+    text-align: center;
+}
+
+.single-live-cat-title p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}

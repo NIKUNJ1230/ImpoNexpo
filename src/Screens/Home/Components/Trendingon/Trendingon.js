@@ -51,7 +51,7 @@ function Trendingon() {
       </div>
       <img src={star_black} alt="" className="trendingon-start" />
       <div className="trendingon-btn-div">
-        <Link to="/userproductcard">
+        <Link to="/hash_card">
           <button className="trendingon-btn">See All</button>
         </Link>
       </div>

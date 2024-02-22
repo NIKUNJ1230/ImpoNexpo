@@ -1,0 +1,12 @@
+.hash-card-cat{
+    text-align: center;
+    transition: all 0.3s linear;
+    color: #46474A;
+}
+.single-hash-text h6 {
+    font-weight: 700;
+}
+.hash-card-cat:hover{
+    background-color: #1D5DC7;
+    color: white;
+}

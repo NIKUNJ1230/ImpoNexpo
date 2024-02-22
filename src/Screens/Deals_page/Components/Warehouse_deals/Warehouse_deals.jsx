@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Warehouse_deals() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="category-deals-title">
                     <li>Deals from Warehouse</li>
                 </div>

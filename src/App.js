@@ -20,6 +20,12 @@ import Search_page from "./Screens/Search_page/Search_page";
 import More_channel from "./Screens/More_channel/More_channel";
 import Deals_page from "./Screens/Deals_page/Deals_page";
 import Categories_page from "./Screens/Categories_page/Categories_page";
+
+import Live_stream_main from "./Screens/Live_stream_main/Live_stream_main";
+import More_live from "./Screens/More_live/More_live";
+import Live_stream_v1 from "./Screens/Live_stream_version/LIve_stream_v1/Live_stream_v1";
+import Live_stream_v2 from "./Screens/Live_stream_version/Live_stream_v2/Live_stream_v2";
+
 import ProductHome from "./Components/aboute products/components/Home";
 import Layout from "./Components/aboute products/components/Layout";
 import ProductDetails from "./Components/aboute products/components/ProductDetails";
@@ -28,6 +34,8 @@ import AddedServices from "./Components/aboute products/components/ShoppingCart/
 import Payment from "./Components/aboute products/components/ShoppingCart/Payment";
 import QuoteResult from "./Components/aboute products/components/QuoteResult";
 import OrderSuccess from "./Components/aboute products/components/ShoppingCart/OrderSuccess";
+import Usercard from "./Screens/Home/Components/UserProductCard/Usercard.js";
+import SourceProducts from "./Screens/SourceProductsHash/SourceProducts.js";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -82,6 +90,13 @@ function App() {
           <Route path="/More_channel" element={<More_channel />} />
           <Route path="/Deals_page" element={<Deals_page />} />
           <Route path="/Category_page" element={<Categories_page />} />
+          <Route path="/More_exporter" element={<Usercard />} />
+          <Route path="/hash_card" element={<SourceProducts />} />
+
+          <Route path="/live_stream_main" element={<Live_stream_main />} />
+          <Route path="/More_live" element={<More_live />} />
+          <Route path="/live_stream_v1" element={<Live_stream_v1 />} />
+          <Route path="/live_stream_v2" element={<Live_stream_v2 />} />
 
           <Route path="/" element={<Home />} />
           <Route path="/testimonial" element={<Testimonial />} />

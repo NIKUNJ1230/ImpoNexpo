@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import Topbar from "../../Components/Topbar/Topbar";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -15,22 +15,16 @@ import Warehouse from "./Components/Warehouse/Warehouse";
 import ProCat from "./Components/ProCat/ProCat";
 import Region from "./Components/Region/Region";
 import Footer from "./Components/Footer/Footer";
-import Fetursindex from "../../Components/FeturesFrom/Fetursindex";
-import Usercard from "./Components/UserProductCard/Usercard";
-import UserProductCard from "./Components/UserProductCard/UserProductCard";
-import Deals_page from "../Deals_page/Deals_page";
-import Example from "../share";
-import ProductShare from "../../Components/Cards/Card_live/Shareproduct";
-import ProcardDemo from "../../Components/Procard-extra/Procard-demo";
-import AbouteProduct from "../../routes";
-import ProductHome from "../../Components/aboute products/components/Home";
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="home__screen">
        <Topbar />
       <Navbar />
       <Hero />
-      <Trending />
+      <Trending title1={"Trending Products"} title2={"on ImpoNexpo Channel"} text={"Explore great Products from great Suppliers"}/>
       <Deals />
       <Expoters />
       <Trendingon />
@@ -41,12 +35,7 @@ const Home = () => {
       <AboutUs />
       <Region />
       <Warehouse />
-      <Footer />
-      <UserProductCard />
-      <ProductShare />
-      <ProcardDemo />
-    {/* <ProductHome /> */}
-      {/* <AbouteProduct /> */}
+      <Footer /> 
     </div>
   );
 };

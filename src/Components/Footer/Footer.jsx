@@ -14,7 +14,7 @@ function Footer() {
   return (
     <>
       <footer className="footer-main">
-        <div className="container">
+        <div className="container-fluid ">
           <div className="footer-title">
             <h5>
               Yes! Send me exclusive offers, unique gift ideas, and personalized
@@ -22,10 +22,10 @@ function Footer() {
             </h5>
             <div className="email-form">
               <div className="row align-center">
-                <div className="w-70">
+                <div className="w-70 p-0">
                   <input type="text" placeholder="Enter your email"/>
                 </div>
-                <div className="w-30">
+                <div className="w-30 p-0">
                   <div className="email-form-btn">
                     <button type="submit">Subscribe</button>
                   </div>
@@ -98,7 +98,7 @@ function Footer() {
         </div>
       </footer>
       <div className="footer-bottom">
-        <div className="container">
+        <div className="container-fluid ">
           <div className="row">
             <div className="w-3">
               <h4>Payment Method</h4>

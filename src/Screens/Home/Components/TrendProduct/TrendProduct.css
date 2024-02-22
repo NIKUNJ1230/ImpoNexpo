@@ -17,13 +17,13 @@
   margin-bottom: 20px;
 }
 
-.live-stream {
+.trending-product-section .live-stream {
   width: 100%;
   height: 850px;
   max-height: 850px;
 }
 
-.live-stream img {
+.trending-product-section .live-stream img, .trending-product-section .live-stream video {
   object-fit: cover;
   width: 100%;
   height: 100%;

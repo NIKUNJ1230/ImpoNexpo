@@ -12,7 +12,7 @@ function Testimonial_Hero() {
   };
   return (
     <section>
-      <div className="container">
+      <div className="container-fluid ">
         <div className="testimonial_banner">
           {/* <div className="row align-center h-100">
             <div className="w-2">

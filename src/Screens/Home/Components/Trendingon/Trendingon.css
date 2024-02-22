@@ -20,11 +20,11 @@
     position: absolute;
     top: 30%;
     left: -7%;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     background-color: transparent;
     border-radius: 50%;
-    border: 75px solid #E9B9D9;
+    border: 60px solid #E9B9D9;
     z-index: -1;
 }
 .trendingon-main-div::after{
@@ -76,9 +76,11 @@
     padding: 10px 40px;
     border-radius: 5px;
     margin: 10px;
+}
+.trendingon-tag a{
+    
     color: #fff;
 }
-
 ul.trendingon-tags-ui {
     align-items: center;
     justify-content: center;

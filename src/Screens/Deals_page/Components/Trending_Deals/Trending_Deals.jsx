@@ -7,7 +7,7 @@ import Single_trending_deal from './Single_trending_deal'
 function Trending_Deals() {
     return (
         <div>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="trending-deals-title">
                     <h2>Trending Deals</h2>
                 </div>

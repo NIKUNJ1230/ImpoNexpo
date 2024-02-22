@@ -1,5 +1,5 @@
 // Sidebar.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Nav } from "react-bootstrap";
 import AccordionMenu from "./AccordionMenu";
 import "./index.css";
@@ -7,14 +7,42 @@ import "./index.css";
 // import "react-input-range/lib/css/index.css";
 
 const Sidebar = () => {
-  const categoryMenu = [
-    "Mobile Accessory",
-    "Electronics",
-    "Smartphone",
-    "Modren tech",
-    "Laptop",
-    "Computer",
-  ];
+  // const categoryMenu = [
+  //   "Mobile Accessory",
+  //   "Electronics",
+  //   "Smartphone",
+  //   "Modren tech",
+  //   "Laptop",
+  //   "Computer",
+  // ];
+
+  // category 
+  const [categoryMenu, setCategoryMenu] = useState([])
+
+  const handleCategory = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/Admin/Find/Categories");
+
+      if (response.status === 200 || response.ok) {
+        const responseData = await response.json();
+        const categoryNames = responseData.Category.map(category => category.name);
+        const uniqueCategoryNames = Array.from(new Set(categoryNames)); // Remove duplicates
+        setCategoryMenu(uniqueCategoryNames);
+      }
+      else {
+        console.log(response?.message || "Something Went Wrong")
+      }
+    }
+    catch (error) {
+      console.log(error)
+    }
+  }
+  useEffect(() => {
+    handleCategory()
+  }, [])
+
+
+
   const Ratings = [
     <div className="d-flex align-items-center">
       <svg

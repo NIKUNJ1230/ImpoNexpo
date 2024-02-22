@@ -4,7 +4,7 @@ import earth from "../../../../assets/testimonial/Earth.svg"
 function Global() {
     return (
         <section>
-            <div className="container">
+            <div className="container-fluid ">
                 <div className="global-title">
                     <h2>global success story</h2>
                 </div>

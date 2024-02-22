@@ -3,15 +3,18 @@
   padding:30px;
   border: 2px solid red;
 }
+.deals-section .home__trendingprods_heading{
+  display: none;
+}
 .deals::after{
   z-index: -1;
   content: "";
   position: absolute;
   bottom: -15%;
-  right: -15%;
-  width: 150px;
-  height: 150px;
-  border: 75px solid #E9B9D9;
+  right: -10%;
+  width: 250px;
+  height: 250px;
+  border: 60px solid #E9B9D9;
   border-radius: 50%;
 }
 .deals-title h2 {
@@ -21,6 +24,9 @@
 }
 
 .deals-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -56,7 +62,6 @@
 .deals-category ul li:hover a {
   color: red;
 }
-
 
 .home__dealsprods_sourcemorebtn {
   width: 270px;
@@ -96,6 +101,6 @@
 
 .home__dealsgprods_hstar{
   position: absolute;
-  left: 15%;
+  left: 0%;
   bottom: 0;
 }
