@@ -45,7 +45,7 @@ const Card1 = ({ ProductId, ProductName, ProductDescription, ProductImage, Like,
   }
   const LikeProduct = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/Like/Product/${ProductId}/65d08c6227dbbda864619b31`, {
+      const response = await fetch(`http://91.107.205.100:97/Like/Product/${ProductId}/65d08c6227dbbda864619b31`, {
         method: 'GET',
       })
       if (response.statusCode === 200 || response.ok) {
@@ -73,7 +73,7 @@ const Card1 = ({ ProductId, ProductName, ProductDescription, ProductImage, Like,
 
   const SaveProduct = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/Save/Product/65d08c6227dbbda864619b31/${ProductId}`)
+      const response = await fetch(`http://91.107.205.100:97/Save/Product/65d08c6227dbbda864619b31/${ProductId}`)
       if (response.ok || response.status === 200) {
         const responseData = await response.json()
         console.log(responseData)
@@ -97,7 +97,7 @@ const Card1 = ({ ProductId, ProductName, ProductDescription, ProductImage, Like,
 
   const postComment = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/Comment/Product/${ProductId}/65d08c6227dbbda864619b31`, {
+      const response = await fetch(`http://91.107.205.100:97/Comment/Product/${ProductId}/65d08c6227dbbda864619b31`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

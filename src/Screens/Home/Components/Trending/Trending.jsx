@@ -38,7 +38,7 @@ const Trending = ({ title1, title2, text }) => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:3000/Trending/Products', {
+      const response = await fetch('http://91.107.205.100:97/Trending/Products', {
         method: "GET",
       });
       if (response.status === 200 || response.ok) {

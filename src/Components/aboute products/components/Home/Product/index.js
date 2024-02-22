@@ -11,7 +11,7 @@ const Product=()=>{
 
     const handleProducts = async () => {
         try {
-            const response = await fetch("http://localhost:3000/Admin/Get/All/Product");
+            const response = await fetch("http://91.107.205.100:97/Admin/Get/All/Product");
             if (response.statusCode === 200 || response.ok) {
                 const responseData = await response.json();
                 setProducts(responseData.product)

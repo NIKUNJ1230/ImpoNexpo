@@ -14,7 +14,7 @@ const Deals = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:3000/Trending/Products', {
+      const response = await fetch('http://91.107.205.100:97/Trending/Products', {
         method: "GET",
       });
       if (response.status === 200 || response.ok) {
@@ -31,7 +31,7 @@ const Deals = () => {
   };
   const catData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/Admin/Find/Categories")
+      const response = await fetch("http://91.107.205.100:97/Admin/Find/Categories")
       if (response.statusCode === 200 || response.ok) {
         const responseData = await response.json();
         setCategory(responseData.Category)

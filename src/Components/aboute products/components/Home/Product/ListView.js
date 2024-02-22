@@ -383,7 +383,7 @@ const ListView = () => {
 
     const handleProducts = async () => {
         try {
-            const response = await fetch("http://localhost:3000/Admin/Get/All/Product");
+            const response = await fetch("http://91.107.205.100:97/Admin/Get/All/Product");
             if (response.statusCode === 200 || response.ok) {
                 const responseData = await response.json();
                 setProducts(responseData.product)
@@ -408,7 +408,7 @@ const ListView = () => {
                     <Row>
                         <Col md={3}>
                             <div className="position-relative text-center" onClick={() => navigate(`/product-details/${item._id}`)}>
-                                <Image src={`http://localhost:3000${item.ProductImage[0]}`} className="object-fit-cover" height={260} />
+                                <Image src={`http://91.107.205.100:97${item.ProductImage[0]}`} className="object-fit-cover" height={260} />
                             </div>
 
                             <LikeShare_Product ProductId={item._id} ProductName={item.ProductName} ProductDescription={item.ProductDescription} Like={item.Like} Comment={item.Comment} Share={item.Share} Saved={item.Saved} />
